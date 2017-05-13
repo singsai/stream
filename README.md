@@ -3,6 +3,6 @@
 ### Getting Started
 
 ```
-> npm install
-> npm start
+> yarn install
+> yarn start
 ```
