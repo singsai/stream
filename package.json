@@ -13,12 +13,18 @@
     ]
   },
   "dependencies": {
+    "body-parser": "^1.17.2",
     "css-loader": "^0.28.1",
+    "express": "^4.15.3",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-redux": "^5.0.4",
     "redux": "^3.6.0",
-    "style-loader": "^0.17.0"
+    "request": "^2.81.0",
+    "style-loader": "^0.17.0",
+    "xml-stream": "^0.4.5"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
