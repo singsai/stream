@@ -26,7 +26,7 @@ function jsFriendlyJSONStringify(s) {
         replace(/\u2029/g, '\\u2029')
 }
 
-app.get('/loadJSON', function(req, res) {
+function createJSONfromXML() {
   var resultsArray = []
 
   // Load local file as file stream
@@ -52,14 +52,16 @@ app.get('/loadJSON', function(req, res) {
     tempWrite.write(jsonResults)
     tempWrite.end()
     tempWrite.on('finish',function(response) {
-      res.send(jsonResults)
+      console.log('Successfully updated JSON file')
+      // res.send(jsonResults)
     })
     tempWrite.on('error',function(error) {
       console.log(error)
     })    
-  })
-})
+  })  
+}
 
 app.listen(3000, function () {
   console.log('Listening on port 3000')
+  createJSONfromXML()
 })
