@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
+/******/ 	__webpack_require__.p = "/dist/";
 /******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(__webpack_require__.s = 290);
@@ -16858,7 +16858,7 @@ function Header() {
 			_react2.default.createElement(
 				'h2',
 				{ className: 'Header-subTitle' },
-				'by Nick'
+				'The latest highlights from the NBA'
 			)
 		),
 		_react2.default.createElement('div', { className: 'Header-actions' })
