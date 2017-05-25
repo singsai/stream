@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import VideoList from './VideoPlayer'
 import VideoPlayer from './VideoPlayer'
 import Background from '../images/background.jpg';
-
+import { Grid, Row, Col, Clearfix } from 'react-bootstrap'
 var sectionStyle = {	
   // backgroundImage: `url(${Background})`
 };
