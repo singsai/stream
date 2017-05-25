@@ -1,5 +1,6 @@
 body {
   background-color: black;
+  font-family: proxima-nova, Helvetica, sans-serif;
 }
 
 .container {
@@ -20,6 +21,7 @@ body {
   flex-basis: auto;
   padding: .5rem;
   min-height: 666px;  
+  cursor: pointer; cursor: hand;  
 }
 
 ul {
@@ -34,6 +36,7 @@ ul {
   width: 450px;
   overflow-y: scroll;
   border: #ddd solid 1px;
+  border-radius: 0 4px 4px 4px;
 }
 
 .react-scrollable-list-item {
@@ -44,6 +47,23 @@ ul {
   padding: 5px;
   background-color: #f2f2f2;
   border-bottom: #ddd solid 1px;
+}
+
+.border-top-radius(@radius) {
+  border-top-right-radius: @radius;
+   border-top-left-radius: @radius;
+}
+.border-right-radius(@radius) {
+  border-bottom-right-radius: @radius;
+     border-top-right-radius: @radius;
+}
+.border-bottom-radius(@radius) {
+  border-bottom-right-radius: @radius;
+   border-bottom-left-radius: @radius;
+}
+.border-left-radius(@radius) {
+  border-bottom-left-radius: @radius;
+     border-top-left-radius: @radius;
 }
 
 @media (max-width: 768px) {

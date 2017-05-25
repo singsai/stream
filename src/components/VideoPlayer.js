@@ -19,7 +19,7 @@ function VideoList(props) {
 	})
 
 	return (
-		<ReactScrollableList 
+		<ReactScrollableList className='list-inline'
 			listItems={listItems}
 			heightOfItem={30}
 			maxItemsToRender={40}	/>
