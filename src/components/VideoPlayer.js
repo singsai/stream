@@ -94,11 +94,15 @@ export default class VideoPlayer extends Component {
 
 	render() {	
 	  return (
-	  	<div>	  		
-		    <Player ref="player">
-		      <source src={this.state.source} />
-		    </Player> 
-		    <div><VideoList updatePlayerInfo={this.updatePlayerInfo}/></div> 		
+	  	<div className="container">	  		
+	  		<div className='player'>
+			    <Player ref="player">
+			      <source src={this.state.source} />
+			    </Player> 
+	  		</div>
+	  		<div className="list">
+		    	<VideoList updatePlayerInfo={this.updatePlayerInfo} />	  			
+	  		</div>	  		
 	  	</div>
 	  )	  
 
