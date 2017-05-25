@@ -3,6 +3,7 @@ import { Player } from 'video-react'
 import 'video-react/dist/video-react.css'
 const defaultVideo = 'http://nba.cdn.turner.com/nba/big/video/2017/04/19/102ff3cf-1449-4eef-bbcf-1c7b330abb10.nba_1377861_640x360_600.mp4'
 import ReactScrollableList from 'react-scrollable-list'
+import Background from '../images/background.jpg';
 
 import Videos from '../../temp.json'
 function VideoList(props) {
@@ -28,7 +29,7 @@ function VideoList(props) {
 export default class VideoPlayer extends Component {
 	constructor(props, context) {
 		super(props, context)
-		this.state = {source: defaultVideo}
+		this.state = {source: null}
 		this.updatePlayerInfo = this.updatePlayerInfo.bind(this)
 	}
 
@@ -66,7 +67,7 @@ export default class VideoPlayer extends Component {
 	  return (
 	  	<div className="container">	  		
 	  		<div className='player'>
-			    <Player autoPlay ref="player">
+			    <Player autoPlay ref="player" poster={Background}>
 			      <source src={this.state.source} />
 			    </Player> 
 	  		</div>
