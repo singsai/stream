@@ -12,10 +12,10 @@
 
 .list {
 	order: 2;
-	flex: 1;
+	flex: 0;
   flex-basis: auto;
   padding: .5rem;
-  min-height: 666px;
+  min-height: 666px;  
 }
 
 ul {
@@ -26,7 +26,7 @@ ul {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  height: 360px;
+  height: 450px;
   width: 450px;
   overflow-y: scroll;
   border: #ddd solid 1px;
