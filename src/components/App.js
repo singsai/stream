@@ -12,7 +12,7 @@ function Header() {
 		<div>
 			<div className="Header-titles">
 			  <h1 className="Header-title">Stream</h1>
-			  <h2 className="Header-subTitle">by Nick</h2>
+			  <h2 className="Header-subTitle">The latest highlights from the NBA</h2>
 			</div>
 			<div className="Header-actions">
 			</div>			
