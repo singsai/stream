@@ -7,7 +7,6 @@ module.exports = {
 	entry: './src/index.js',
 	output: {
 		path: path.resolve('dist'),
-		publicPath: '/dist/',
 		filename: 'index_bundle.js'
 	},
   // plugins: [
