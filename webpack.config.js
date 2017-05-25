@@ -6,8 +6,7 @@ require('url-loader')
 module.exports = {
 	entry: './src/index.js',
 	output: {
-		path: path.resolve('dist'),
-		publicPath: '/dist/',
+		path: path.resolve('dist'),		
 		filename: 'index_bundle.js'
 	},
   // plugins: [
