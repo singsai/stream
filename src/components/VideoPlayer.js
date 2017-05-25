@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Player } from 'video-react'
 import 'video-react/dist/video-react.css'
 const defaultVideo = 'http://nba.cdn.turner.com/nba/big/video/2017/04/19/102ff3cf-1449-4eef-bbcf-1c7b330abb10.nba_1377861_640x360_600.mp4'
+import ReactScrollableList from 'react-scrollable-list'
 
 import Videos from '../../temp.json'
 function VideoList(props) {
@@ -9,13 +10,20 @@ function VideoList(props) {
 	// renderList() {
 	// 	return Videos.map((video, index) => <li key={index} onClick={()=>props.changeVideo(video["video:content_loc"])} >{video["video:title"]}</li>)
 	// }
+	let listItems = [] 
+	Videos.map((video, index) => {
+		let item = <li key={index} onClick={()=>props.updatePlayerInfo(video["video:content_loc"])} >{video["video:title"]}</li>
+		listItems.push({id: index, content: <span onClick={()=>props.updatePlayerInfo(video["video:content_loc"])}>{video["video:title"]}</span>})
+	})
 
+	console.log(listItems.length)
 	return (
-		<div>
-			<ul>					
-				{Videos.map((video, index) => <li key={index} onClick={()=>props.updatePlayerInfo(video["video:content_loc"])} >{video["video:title"]}</li>)}				
-			</ul>				
-		</div>
+		<ReactScrollableList 
+					listItems={listItems}
+					heightOfItem={30}
+    			maxItemsToRender={40}	/>
+		
+
 	)
 }
 
@@ -93,6 +101,7 @@ export default class VideoPlayer extends Component {
 	// }
 
 	render() {	
+		console.log(this.props)
 	  return (
 	  	<div className="container">	  		
 	  		<div className='player'>
@@ -101,7 +110,7 @@ export default class VideoPlayer extends Component {
 			    </Player> 
 	  		</div>
 	  		<div className="list">
-		    	<VideoList updatePlayerInfo={this.updatePlayerInfo} />	  			
+		    	<VideoList updatePlayerInfo={this.updatePlayerInfo}/>		
 	  		</div>	  		
 	  	</div>
 	  )	  
