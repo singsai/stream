@@ -6,24 +6,22 @@ import ReactScrollableList from 'react-scrollable-list'
 
 import Videos from '../../temp.json'
 function VideoList(props) {
-
-	// renderList() {
-	// 	return Videos.map((video, index) => <li key={index} onClick={()=>props.changeVideo(video["video:content_loc"])} >{video["video:title"]}</li>)
-	// }
 	let listItems = [] 
 	Videos.map((video, index) => {
-		let item = <li key={index} onClick={()=>props.updatePlayerInfo(video["video:content_loc"])} >{video["video:title"]}</li>
-		listItems.push({id: index, content: <span onClick={()=>props.updatePlayerInfo(video["video:content_loc"])}>{video["video:title"]}</span>})
+		listItems.push(
+		{
+			id: index, 
+			content: <span onClick={()=>props.updatePlayerInfo(video["video:content_loc"])}>
+									{video["video:title"]}
+							 </span>
+		})
 	})
 
-	console.log(listItems.length)
 	return (
 		<ReactScrollableList 
-					listItems={listItems}
-					heightOfItem={30}
-    			maxItemsToRender={40}	/>
-		
-
+			listItems={listItems}
+			heightOfItem={30}
+			maxItemsToRender={40}	/>
 	)
 }
 
@@ -31,8 +29,6 @@ export default class VideoPlayer extends Component {
 	constructor(props, context) {
 		super(props, context)
 		this.state = {source: defaultVideo}
-		// this.renderVideo = this.renderVideo.bind(this)
-		// this.handleStateChange = this.handleStateChange.bind(this)
 		this.updatePlayerInfo = this.updatePlayerInfo.bind(this)
 	}
 
@@ -48,7 +44,6 @@ export default class VideoPlayer extends Component {
   componentDidMount() {
     // subscribe state change    
     this.refs.player.subscribeToStateChange(this.handleStateChange.bind(this));    	
-  	// this.setState({source: this.props.video})
   }
   handleStateChange(state, prevState) {
     // copy player state to this component's state
@@ -57,7 +52,6 @@ export default class VideoPlayer extends Component {
     });
   }
   componentDidUpdate(prevProps, prevState) {
-  	// console.log('prevProps', prevProps, '??', 'prevState', prevState)
   	if (this.state.source !== prevState.source) {
       this.refs.player.load();
     }
@@ -68,44 +62,11 @@ export default class VideoPlayer extends Component {
     });
   }
 
-	// renderVideo() {
-	//   return (
-	//   	<div>	  		
-	// 	    <Player>
-	// 	      <source src={this.props.video} />
-	// 	    </Player>  		
-	//   	</div>
-	//   )	  
-	// }
-
-	// componentDidMount() {
-	// 	console.log('hello')
-	// 	// if (this.state.prevVideo !== this.props.video) {
-
-	// 	// 		console.log(this.props.video)
-	// 	// 		this.setState({prevVideo: this.props.video})
-	// 	// 		// return <div>{this.props.video}</div>
-	// 	// 		// return <div>{this.renderVideo(this.props.video)}</div>
-
-	// 	// 	} 		
-	// }
-
-	// renderVideo(vid) {
-	//   return (
-	//   	<div>	  		
-	// 	    <Player>
-	// 	      <source src={vid} />
-	// 	    </Player>  		
-	//   	</div>
-	//   )	  
-	// }
-
 	render() {	
-		console.log(this.props)
 	  return (
 	  	<div className="container">	  		
 	  		<div className='player'>
-			    <Player ref="player">
+			    <Player autoPlay ref="player">
 			      <source src={this.state.source} />
 			    </Player> 
 	  		</div>
@@ -114,11 +75,5 @@ export default class VideoPlayer extends Component {
 	  		</div>	  		
 	  	</div>
 	  )	  
-
-		// console.log('video', this.props.video)
-		// return this.renderVideo()
-		// else {
-		// 	return this.renderVideo(this.state.prevVideo)
-		// }
 	}
 }

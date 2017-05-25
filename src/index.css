@@ -1,6 +1,7 @@
 .container {
   display: flex;
   width: 100%;
+  flex-direction: row;
 }
 
 .player {
@@ -10,7 +11,7 @@
 }
 
 .list {
-	order: 1;
+	order: 2;
 	flex: 1;
   flex-basis: auto;
   padding: .5rem;
@@ -21,12 +22,12 @@ ul {
 	list-style: none;
 }
 
-.react-scrollable-list {
+.react-scrollable-list {	
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  height: 400px;
-  width: 400px;
+  height: 360px;
+  width: 450px;
   overflow-y: scroll;
   border: #ddd solid 1px;
 }
@@ -39,4 +40,19 @@ ul {
   padding: 5px;
   background-color: #f2f2f2;
   border-bottom: #ddd solid 1px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    flex: 1;
+  }
+  .player {
+  	flex: none;
+  	min-width: 360px
+/*  	flex: 4;
+  	flex-direction: column;*/
+  	/*flex: 0 0 12em;*/
+    
+  }
 }
