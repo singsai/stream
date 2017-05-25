@@ -12,9 +12,12 @@ function VideoList(props) {
 		listItems.push(
 		{
 			id: index, 
-			content: <span onClick={()=>props.updatePlayerInfo(video["video:content_loc"])}>
-									{video["video:title"]}
-							 </span>
+			content: <div onClick={()=>props.updatePlayerInfo(video["video:content_loc"])}>
+									<span className='caption'>
+										<img src={video["video:thumbnail_loc"]} />
+										<span className='video-title'>{video["video:title"]}</span>										
+									</span>
+							 </div>
 		})
 	})
 

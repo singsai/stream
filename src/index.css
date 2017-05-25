@@ -22,6 +22,7 @@ body {
   padding: .5rem;
   min-height: 666px;  
   cursor: pointer; cursor: hand;  
+  color: #2E2827;
 }
 
 ul {
@@ -36,34 +37,36 @@ ul {
   width: 450px;
   overflow-y: scroll;
   border: #ddd solid 1px;
-  border-radius: 0 4px 4px 4px;
+  border-radius: 0 8px 4px 0;
 }
 
 .react-scrollable-list-item {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  height: 30px;
-  padding: 5px;
+  height: 130px;
+  padding: 16px;  
   background-color: #f2f2f2;
   border-bottom: #ddd solid 1px;
 }
+.caption {
+  /*float: right;*/
+  padding-top:10px;  
+  /*width: 350px;*/
+  /*word-wrap: break-word;*/
+  /*margin-left:auto; margin-right:0*/
+  /*vertical-align: middle;  */
+}
 
-.border-top-radius(@radius) {
-  border-top-right-radius: @radius;
-   border-top-left-radius: @radius;
+.clear {
+  clear:both;
 }
-.border-right-radius(@radius) {
-  border-bottom-right-radius: @radius;
-     border-top-right-radius: @radius;
-}
-.border-bottom-radius(@radius) {
-  border-bottom-right-radius: @radius;
-   border-bottom-left-radius: @radius;
-}
-.border-left-radius(@radius) {
-  border-bottom-left-radius: @radius;
-     border-top-left-radius: @radius;
+
+.video-title {
+  float: right;
+  padding-top:30px;
+  width: 250px;
+  height: 100px;      
 }
 
 @media (max-width: 768px) {
