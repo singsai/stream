@@ -38,7 +38,7 @@ export default class VideoPlayer extends Component {
 
 	renderVideo() {
 	  return (
-	  	<div>	  		
+	  	<div className='player'>	  		
 		    <Player ref="player">
 		      <source src={this.state.source} />
 		    </Player>  		
