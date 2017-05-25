@@ -1,4 +1,4 @@
-## A React/Redux Skeleton built with Yarn and Webpack 2
+## A basketball video streaming app that doesn't rely on Youtube
 
 ### Getting Started
 
