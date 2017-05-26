@@ -25,6 +25,7 @@
     "react-bootstrap": "^0.31.0",
     "react-dom": "^15.5.4",
     "react-fontawesome": "^1.6.1",
+    "react-image": "^1.0.1",
     "react-prism": "^4.1.0",
     "react-redux": "^5.0.4",
     "react-scrollable-list": "^1.1.3",

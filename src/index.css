@@ -58,8 +58,9 @@ ul {
   /*vertical-align: middle;  */
 }
 
-.clear {
-  clear:both;
+.thumbnail {
+  width: 136px;
+  height: 96px;
 }
 
 .video-title {

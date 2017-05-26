@@ -4,7 +4,7 @@ import 'video-react/dist/video-react.css'
 const defaultVideo = 'http://nba.cdn.turner.com/nba/big/video/2017/04/19/102ff3cf-1449-4eef-bbcf-1c7b330abb10.nba_1377861_640x360_600.mp4'
 import ReactScrollableList from 'react-scrollable-list'
 import Background from '../images/background.jpg'
-
+import Img from 'react-image'
 import Videos from '../../temp.json'
 function VideoList(props) {
 	let listItems = [] 
@@ -14,7 +14,7 @@ function VideoList(props) {
 			id: index, 
 			content: <div onClick={()=>props.updatePlayerInfo(video["video:content_loc"])}>
 									<span className='caption'>
-										<img src={video["video:thumbnail_loc"]} />
+										<Img className='thumbnail' src={[video["video:thumbnail_loc"], 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXCXPKRQr7z_6h9U-21ZJ2D0IjqdNpJwhXmhq04aDdqvOaLlRh']} />
 										<span className='video-title'>{video["video:title"]}</span>										
 									</span>
 							 </div>
