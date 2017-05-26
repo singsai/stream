@@ -77,11 +77,19 @@ ul {
   .player {
   	flex: none;
   	min-width: 360px;
-  	flex: 5;
+  	flex: 1;
   	flex-direction: column;
-  	/*flex: 0 0 12em;*/
-    
+  	/*flex: 0 0 12em;*/    
   }
+  .list {
+    order: 1;
+    flex: 0;
+    flex-basis: auto;
+    padding: .5rem;
+    min-height: 666px;  
+    cursor: pointer; cursor: hand;  
+    color: #2E2827;
+  }  
 }
 
 .Header {
@@ -102,6 +110,7 @@ ul {
   line-height: 1;
   word-spacing: 0.08em;
   color: white;
+  cursor: pointer; cursor: hand; 
 }
 .Header-title i {
   font-family: serif;

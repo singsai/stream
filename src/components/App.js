@@ -11,7 +11,7 @@ function Header() {
 	return (
 		<div>
 			<div className="Header-titles">
-			  <h1 className="Header-title">Stream</h1>
+			  <h1 className="Header-title" onClick={()=>window.location='https://singsai.github.io/stream/dist/'}>Stream</h1>
 			  <h2 className="Header-subTitle">The latest highlights from the NBA</h2>
 			</div>
 			<div className="Header-actions">
