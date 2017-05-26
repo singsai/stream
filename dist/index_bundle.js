@@ -11722,7 +11722,7 @@ var defaultVideo = 'http://nba.cdn.turner.com/nba/big/video/2017/04/19/102ff3cf-
 function VideoList(props) {
 	var listItems = [];
 	_temp2.default.map(function (video, index) {
-		listItems.push({
+		listItems.unshift({
 			id: index,
 			content: _react2.default.createElement(
 				'div',

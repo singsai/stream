@@ -3,13 +3,13 @@ import { Player } from 'video-react'
 import 'video-react/dist/video-react.css'
 const defaultVideo = 'http://nba.cdn.turner.com/nba/big/video/2017/04/19/102ff3cf-1449-4eef-bbcf-1c7b330abb10.nba_1377861_640x360_600.mp4'
 import ReactScrollableList from 'react-scrollable-list'
-import Background from '../images/background.jpg';
+import Background from '../images/background.jpg'
 
 import Videos from '../../temp.json'
 function VideoList(props) {
 	let listItems = [] 
 	Videos.map((video, index) => {
-		listItems.push(
+		listItems.unshift(
 		{
 			id: index, 
 			content: <div onClick={()=>props.updatePlayerInfo(video["video:content_loc"])}>
