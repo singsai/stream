@@ -24865,7 +24865,9 @@ function Header() {
 			{ className: 'Header-titles' },
 			_react2.default.createElement(
 				'h1',
-				{ className: 'Header-title' },
+				{ className: 'Header-title', onClick: function onClick() {
+						return window.location = 'https://singsai.github.io/stream/dist/';
+					} },
 				'Stream'
 			),
 			_react2.default.createElement(
@@ -53483,7 +53485,7 @@ exports = module.exports = __webpack_require__(149)(undefined);
 
 
 // module
-exports.push([module.i, "body {\n  background-color: black;\n  font-family: proxima-nova, Helvetica, sans-serif;\n}\n\n.container {\n  display: flex;\n  width: 100%;\n  flex-direction: row;\n}\n\n.player {\n\torder: 1;\n\tflex: 5;\n  padding: .5rem;\n}\n\n.list {\n\torder: 2;\n\tflex: 0;\n  flex-basis: auto;\n  padding: .5rem;\n  min-height: 666px;  \n  cursor: pointer; cursor: hand;  \n  color: #2E2827;\n}\n\nul {\n\tlist-style: none;\n}\n\n.react-scrollable-list {\t\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  height: 450px;\n  width: 450px;\n  overflow-y: scroll;\n  border: #ddd solid 1px;\n  border-radius: 0 8px 4px 0;\n}\n\n.react-scrollable-list-item {\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  height: 130px;\n  padding: 16px;  \n  background-color: #f2f2f2;\n  border-bottom: #ddd solid 1px;\n}\n.caption {\n  /*float: right;*/\n  padding-top:10px;  \n  /*width: 350px;*/\n  /*word-wrap: break-word;*/\n  /*margin-left:auto; margin-right:0*/\n  /*vertical-align: middle;  */\n}\n\n.clear {\n  clear:both;\n}\n\n.video-title {\n  float: right;\n  padding-top:30px;\n  width: 250px;\n  height: 100px;      \n}\n\n@media (max-width: 768px) {\n  .container {\n    flex-direction: column;\n    flex: 1;\n  }\n  .player {\n  \tflex: none;\n  \tmin-width: 360px;\n  \tflex: 5;\n  \tflex-direction: column;\n  \t/*flex: 0 0 12em;*/\n    \n  }\n}\n\n.Header {\n  padding: 1.5em;\n  background-color: rgba(147, 128, 108, 0.1);\n  text-align: center;  \n}\n@media (--break-lg) {\n  .Header {\n    padding: 3em 1.5em;\n  }\n}\n\n.Header-title {\n  margin: 0 0 0.15em;\n  font-size: 1.8em;\n  font-weight: 600;\n  line-height: 1;\n  word-spacing: 0.08em;\n  color: white;\n}\n.Header-title i {\n  font-family: serif;\n  font-style: italic;\n  font-weight: 400;\n}\n.Header-title a {\n  border: 0;\n  color: inherit;\n  font-weight: inherit;\n}\n.Header-title a:focus, .Header-title a:hover, .Header-title a:active {\n  text-decoration: none;\n}\n@media (--break-lg) {\n  .Header-title {\n    font-size: 4em;\n  }\n}\n\n.Header-subTitle {\n  margin: 0 0 1.5em;\n  font-size: 0.8em;\n  font-weight: 300;\n  white-space: nowrap;\n  color: white;\n}\n@media (--break-lg) {\n  .Header-subTitle {\n    margin: 1em 0 1.75em;\n    font-size: 1.1em;\n  }\n}\n\n.Header-actions {\n  display: flex;\n  align-items: stretch;\n  flex-direction: column;\n  font-size: 0.9em;\n}\n@media (--break-sm) {\n  .Header-actions {\n    align-items: center;\n    flex-direction: row;\n    justify-content: center;\n  }\n}\n@media (--break-lg) {\n  .Header-actions {\n    font-size: 1.1em;\n  }\n}\n\n.Header-button:first-child {\n  margin: 0 0 1em;\n}\n@media (--break-sm) {\n  .Header-button:first-child {\n    margin: 0 1em 0 0;\n  }\n}\n\n@media (--break-lg) {\n  .Header--cozy {\n    display: flex;\n    padding: 1.5em;\n    align-items: center;\n  }\n  .Header--cozy .Header-titles {\n    display: flex;\n    align-items: baseline;\n  }\n  .Header--cozy .Header-title {\n    font-size: 1.5em;\n  }\n  .Header--cozy .Header-subTitle {\n    margin: 0 0 0 1em;\n    font-size: 0.8em;\n    font-weight: 300;\n    color: gray;\n  }\n  .Header--cozy .Header-actions {\n    flex: 1;\n    justify-content: flex-end;\n    font-size: 0.9em;\n  }\n}\n", ""]);
+exports.push([module.i, "body {\n  background-color: black;\n  font-family: proxima-nova, Helvetica, sans-serif;\n}\n\n.container {\n  display: flex;\n  width: 100%;\n  flex-direction: row;\n}\n\n.player {\n\torder: 1;\n\tflex: 5;\n  padding: .5rem;\n}\n\n.list {\n\torder: 2;\n\tflex: 0;\n  flex-basis: auto;\n  padding: .5rem;\n  min-height: 666px;  \n  cursor: pointer; cursor: hand;  \n  color: #2E2827;\n}\n\nul {\n\tlist-style: none;\n}\n\n.react-scrollable-list {\t\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  height: 450px;\n  width: 450px;\n  overflow-y: scroll;\n  border: #ddd solid 1px;\n  border-radius: 0 8px 4px 0;\n}\n\n.react-scrollable-list-item {\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  height: 130px;\n  padding: 16px;  \n  background-color: #f2f2f2;\n  border-bottom: #ddd solid 1px;\n}\n.caption {\n  /*float: right;*/\n  padding-top:10px;  \n  /*width: 350px;*/\n  /*word-wrap: break-word;*/\n  /*margin-left:auto; margin-right:0*/\n  /*vertical-align: middle;  */\n}\n\n.clear {\n  clear:both;\n}\n\n.video-title {\n  float: right;\n  padding-top:30px;\n  width: 250px;\n  height: 100px;      \n}\n\n@media (max-width: 768px) {\n  .container {\n    flex-direction: column;\n    flex: 1;\n  }\n  .player {\n  \tflex: none;\n  \tmin-width: 360px;\n  \tflex: 1;\n  \tflex-direction: column;\n  \t/*flex: 0 0 12em;*/    \n  }\n  .list {\n    order: 1;\n    flex: 0;\n    flex-basis: auto;\n    padding: .5rem;\n    min-height: 666px;  \n    cursor: pointer; cursor: hand;  \n    color: #2E2827;\n  }  \n}\n\n.Header {\n  padding: 1.5em;\n  background-color: rgba(147, 128, 108, 0.1);\n  text-align: center;  \n}\n@media (--break-lg) {\n  .Header {\n    padding: 3em 1.5em;\n  }\n}\n\n.Header-title {\n  margin: 0 0 0.15em;\n  font-size: 1.8em;\n  font-weight: 600;\n  line-height: 1;\n  word-spacing: 0.08em;\n  color: white;\n  cursor: pointer; cursor: hand; \n}\n.Header-title i {\n  font-family: serif;\n  font-style: italic;\n  font-weight: 400;\n}\n.Header-title a {\n  border: 0;\n  color: inherit;\n  font-weight: inherit;\n}\n.Header-title a:focus, .Header-title a:hover, .Header-title a:active {\n  text-decoration: none;\n}\n@media (--break-lg) {\n  .Header-title {\n    font-size: 4em;\n  }\n}\n\n.Header-subTitle {\n  margin: 0 0 1.5em;\n  font-size: 0.8em;\n  font-weight: 300;\n  white-space: nowrap;\n  color: white;\n}\n@media (--break-lg) {\n  .Header-subTitle {\n    margin: 1em 0 1.75em;\n    font-size: 1.1em;\n  }\n}\n\n.Header-actions {\n  display: flex;\n  align-items: stretch;\n  flex-direction: column;\n  font-size: 0.9em;\n}\n@media (--break-sm) {\n  .Header-actions {\n    align-items: center;\n    flex-direction: row;\n    justify-content: center;\n  }\n}\n@media (--break-lg) {\n  .Header-actions {\n    font-size: 1.1em;\n  }\n}\n\n.Header-button:first-child {\n  margin: 0 0 1em;\n}\n@media (--break-sm) {\n  .Header-button:first-child {\n    margin: 0 1em 0 0;\n  }\n}\n\n@media (--break-lg) {\n  .Header--cozy {\n    display: flex;\n    padding: 1.5em;\n    align-items: center;\n  }\n  .Header--cozy .Header-titles {\n    display: flex;\n    align-items: baseline;\n  }\n  .Header--cozy .Header-title {\n    font-size: 1.5em;\n  }\n  .Header--cozy .Header-subTitle {\n    margin: 0 0 0 1em;\n    font-size: 0.8em;\n    font-weight: 300;\n    color: gray;\n  }\n  .Header--cozy .Header-actions {\n    flex: 1;\n    justify-content: flex-end;\n    font-size: 0.9em;\n  }\n}\n", ""]);
 
 // exports
 
@@ -53524,531 +53526,6 @@ if(false) {
 /***/ (function(module, exports) {
 
 module.exports = [
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/08/debccf84-430f-451c-a7e4-79ae72ea02f9.nba_1412864_640x360_600.mp4",
-		"video:title": "GameTime: Spurs at Rockets Game 4 Analysis",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F08%2F56857077-01ed-4a95-bfbd-c2180e014d7f.nba_1_1280x720.jpg",
-		"video:description": "The GameTime crew breaks down Game 4 between the San Antonio Spurs and Houston Rockets. James Harden records a double double with 28 points and 12 assists while Eric Gordon adds 22.",
-		"video:duration": "148"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/08/a0e6d1b6-773d-488b-8b96-04e65e1dbf8a.nba_1412854_640x360_600.mp4",
-		"video:title": "GameTime: Celtics At Wizards Game 4 Analysis",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F08%2F40e3e28d-d858-4cd0-8a3c-fe6505e12234.nba_1_1280x720.jpg",
-		"video:description": "The GameTime crew breaks down Game 4 between the Boston Celtics and Washington Wizards. John Wall and Bradley Beal combine for 56 points as the Wizards go on a 26-0 run in the third quarter.",
-		"video:duration": "354"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/08/cc682bf0-fafd-4e4e-af0f-9f5fdf55b53c.nba_1412829_640x360_600.mp4",
-		"video:title": "May 7: The Fast Break",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/https:%2F%2Fcdn.nba.net%2Fnba-drupal-prod%2F2017-05%2F_fb_0.jpg",
-		"video:description": "See who came out on top in Sunday's Round 2 matchups in this edition of The Fast Break.",
-		"video:duration": "71"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/08/e3305d1e-1b76-444a-9376-ef6865224334.nba_1412899_640x360_600.mp4",
-		"video:title": "GameTime: Warriors Look to Sweep Despite Kerr's Absence",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F08%2F0d91c7dc-6b7c-48e3-8c49-34d5d3ccefa2.nba_1_1280x720.jpg",
-		"video:description": "GameTime's Lewis Johnson reports from Salt Lake City on the Warriors' attempt at completing a Round 2 sweep without Steve Kerr on the sideline.",
-		"video:duration": "109"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/08/3ae639c0-94e0-40c5-a1bc-4eff32682c58.nba_1412905_640x360_600.mp4",
-		"video:title": "Dunks Of The Day: May 7",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/https:%2F%2Fcdn.nba.net%2Fnba-drupal-prod%2F2017-05%2FGettyImages-680137884.jpg",
-		"video:description": "Check out the best dunks from Sunday's action in the NBA with the Dunks of the Day.",
-		"video:duration": "49"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/07/92eb8036-3e9a-4bc6-804b-b1af8db395b4.nba_1412688_640x360_600.mp4",
-		"video:title": "Beal Scores 29  in Game 4 Win",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F07%2Fc4f2beb3-8565-4879-8dc6-52c15af74d9c.nba_1_1280x720.jpg",
-		"video:description": "Bradley Beal scores 29 points to help the Wizards tie the series 2-2.",
-		"video:duration": "101"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/08/41235bd6-179d-4487-9ab0-f5caa58bec6b.nba_1412859_640x360_600.mp4",
-		"video:title": "Inside the NBA: EJ Speaks At UGA's Commencement",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F08%2F1e5b2e78-e51b-4ab4-9955-2abe85603a42.nba_1_1280x720.jpg",
-		"video:description": "Ernie Johnson was the Keynote speaker at the UGA commencement.",
-		"video:duration": "271"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/08/64ae7922-fae1-4b9d-8177-3f1642530ea5.nba_1412845_640x360_600.mp4",
-		"video:title": "San Antonio vs. Houston - 5/07/2017",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/https:%2F%2Fcdn.nba.net%2Fnba-drupal-prod%2F2017-05%2F_harden_0.jpg",
-		"video:description": "James Harden scores 28 points and dishes out 12 assists for the Rockets as they defeat the Spurs 125-104 to even the series at 2-2.",
-		"video:duration": "99"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/08/c8afa4a7-1dca-490b-85f7-533bc60e429d.nba_1412803_640x360_600.mp4",
-		"video:title": "Nightly Notable: LeBron James",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/https:%2F%2Fcdn.nba.net%2Fnba-drupal-prod%2F2017-05%2FGettyImages-680083018.jpg",
-		"video:description": "LeBron James scores 35 points as the Cavaliers complete a four-game sweep of the Raptors.",
-		"video:duration": "120"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/08/ddbd3fd4-cbe6-4eea-9262-be7c0b2a6af8.nba_1412925_640x360_600.mp4",
-		"video:title": "Wizards vs. Celtics, Game 5 Look Ahead",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/https:%2F%2Fcdn.nba.net%2Fnba-drupal-prod%2F2017-05%2FGettyImages-680132086.jpg",
-		"video:description": "The GameTime crew looks ahead to Game 5 of the Eastern Conference semifinals between the Wizards and Celtics.",
-		"video:duration": "119"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/07/4f2c85cf-8ca0-4ca9-9931-a0d90eeeeb9c.nba_1412737_640x360_600.mp4",
-		"video:title": "Move of the Night - DeMar DeRozan",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/https:%2F%2Fcdn.nba.net%2Fnba-drupal-prod%2F2017-05%2F_motn_2.jpg",
-		"video:description": "DeMar DeRozan uses the nice move to shake LeBron James then hits the jumper.",
-		"video:duration": "23"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/08/73e2be1d-a1a5-4130-b55a-e8329f3fc7ad.nba_1414239_640x360_600.mp4",
-		"video:title": "GameTime: Kevin McHale",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F08%2F45035ba9-829c-45d2-ac99-4acf2bba1cfd.nba_1_1280x720.jpg",
-		"video:description": "The GameTime crew talks with Kevin McHale before Game 4 between the Jazz and Warriors.",
-		"video:duration": "394"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/08/0adf6703-01f6-425f-acd0-97500a343e5b.nba_1414384_640x360_600.mp4",
-		"video:title": "Area 21: Reminiscing",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F08%2F62ef3a68-a30a-41a9-a007-28fae1e9e252.nba_1_1280x720.jpg",
-		"video:description": "KG, Rondo,Big Baby, Paul Pierce, Perkins and Doc Rivers talk about old times.",
-		"video:duration": "646"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/08/9238f46c-5bd7-4776-84b7-15f99b908fc5.nba_1414465_640x360_600.mp4",
-		"video:title": "Livingston Spins and Hits",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F08%2F8e2c17ee-b2c9-45ee-a369-7d768e0486d9.nba_1_1280x720.jpg",
-		"video:description": "Shaun Livingston coasts into the lane, spins and sinks the floater.",
-		"video:duration": "27"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/08/e5e10f7d-f037-469b-8679-331b9c56cf5f.nba_1414136_640x360_600.mp4",
-		"video:title": "Should the Raptors Blow It Up?",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/https:%2F%2Fcdn.nba.net%2Fnba-drupal-prod%2F2017-04%2FKyle%20Lowry%20DeMar%20DeRozan%20road%20uni%20talk.jpg",
-		"video:description": "With Lowry and Ibaka headed toward free agency, what should the Raptors do after another playoff exit at the hands of LeBron?",
-		"video:duration": "241"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/08/07e38d0a-96fb-4271-b5bc-fc7716283176.nba_1414261_640x360_600.mp4",
-		"video:title": "GameTime: Zaza Pachulia",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F08%2F9739c40b-4083-4a83-b13d-512bd7b1bd9f.nba_1_1280x720.jpg",
-		"video:description": "Zaza Pachulia talks about how everyone understand their role on the Warriors and how they are successful.",
-		"video:duration": "149"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/08/1438a00c-a827-4dd9-b314-96338c35ec6b.nba_1414285_640x360_600.mp4",
-		"video:title": "Ingles Steal, Hayward Three",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F08%2F3daad723-eeee-4a72-b9c8-bc883a5c151d.nba_1_1280x720.jpg",
-		"video:description": "Joe Ingles comes from behind for the steal on Klay Thompson and Gordon Hayward knocks down the 3-pointer on the other end.",
-		"video:duration": "41"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/08/a7b21bb6-b4a6-4f8a-b33e-75803ce011df.nba_1414310_640x360_600.mp4",
-		"video:title": "Livingston to McGee",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F08%2F731836ac-5794-4d18-ac3d-2ffeb9646957.nba_1_1280x720.jpg",
-		"video:description": "Shaun Livingston pulls down the rebound and finds JaVale Mcgee streaking to the other end with a great pass for the dunk.",
-		"video:duration": "28"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/08/ca74d989-af71-4d58-95bb-3ed1d7b1995f.nba_1414339_640x360_600.mp4",
-		"video:title": "Ingles Finds Exum",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F08%2Fba89f55b-a903-47da-9abe-91e3f86c42c4.nba_1_1280x720.jpg",
-		"video:description": "Joe Ingles hits Dante Exum with a pretty bounce-pass for the layup.",
-		"video:duration": "21"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/08/6d89f2f3-34b6-4f59-9872-b93bdaf3d13e.nba_1414319_640x360_600.mp4",
-		"video:title": "Johnson to Favors",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F08%2F6c9af4d2-97d0-4678-8bcc-07ad4f84b57c.nba_1_1280x720.jpg",
-		"video:description": "Joe Johnson spins into the lane and hits Derrick Favors cutting to the rim for the big two-handed slam.",
-		"video:duration": "23"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/08/5318678b-aafd-4157-9366-722aac0f75a2.nba_1414327_640x360_600.mp4",
-		"video:title": "Exum to the Rack",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F08%2F06bc9c5e-318e-4ffe-b1af-89f289513871.nba_1_1280x720.jpg",
-		"video:description": "Dante Exum crosses over and drives for the big two-handed slam.",
-		"video:duration": "20"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/08/4932c566-c6a6-4804-a01c-fd87d8ad6d87.nba_1414372_640x360_600.mp4",
-		"video:title": "Exum For Three",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F08%2F30884159-1123-479c-9554-58c101c9c6d9.nba_1_1280x720.jpg",
-		"video:description": "Gordon Hayward drives and kicks out to Dante Exum for the wide-open 3-pointer.",
-		"video:duration": "25"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/08/8ddc21da-a109-451f-9a4c-437151ec7950.nba_1414410_640x360_600.mp4",
-		"video:title": "Curry's Tough Floater",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F08%2Fb6779e95-2bd8-4577-a8c3-4ceeaf170eb7.nba_1_1280x720.jpg",
-		"video:description": "Stephen Curry crosses over and drives and takes the contact for the tough floater in the lane.",
-		"video:duration": "27"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/08/b0dfd8ad-5d22-4ce2-963d-51c57b98fe20.nba_1414395_640x360_600.mp4",
-		"video:title": "Area 21 : Ray Allen Talk",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F08%2Fc3f829c7-93f8-4805-8aa7-861df4359607.nba_1_1280x720.jpg",
-		"video:description": "The old Celtics crew talks about how they felt when Ray Allen decided to leave Boston and play for the Heat.",
-		"video:duration": "395"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/08/dc7ee752-0f8b-47d6-8c82-97be435240f4.nba_1414424_640x360_600.mp4",
-		"video:title": "Gatorade Smooth Finish: Kevin Durant",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F08%2Ff37ffdd2-56ed-48ae-8d9e-7be6f1fa8f60.nba_1_1280x720.jpg",
-		"video:description": "Kevin Durant uses the cross-over and sinks the smooth one-legged runner.",
-		"video:duration": "21"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/08/4d314604-d0c9-4816-ba2c-225b323083ec.nba_1414447_640x360_600.mp4",
-		"video:title": "Green to Iguodala",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F08%2F1f28bef0-9d57-4ce5-aa68-62babaf02f44.nba_1_1280x720.jpg",
-		"video:description": "Draymond Green draws the triple-team and somehow finds Andre Iguodala for the open 3-pointer beat the shot clock late in the 3rd quarter.",
-		"video:duration": "29"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/08/05a556ec-4905-48c2-a7a5-dc0cbc6dd0eb.nba_1414485_640x360_600.mp4",
-		"video:title": "Curry Talks Game 4 Win",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F08%2Fe639e2b0-69a7-4934-a36d-bb7128efbbdd.nba_1_1280x720.jpg",
-		"video:description": "Stephen Curry talks with Lewis Johnson after the Warriors Game 4 win over the Jazz, securing another series sweep.",
-		"video:duration": "85"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/07/fceb34cb-195a-4415-961e-4c438fbffb95.nba_1412735_640x360_600.mp4",
-		"video:title": "Dunk of the Night - James Harden",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/https:%2F%2Fcdn.nba.net%2Fnba-drupal-prod%2F2017-05%2F_dotn_1.jpg",
-		"video:description": "James Harden streaks to the bucket for the running one-handed jam.",
-		"video:duration": "22"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/08/17fe8040-dbb4-42ce-9024-d43622747b8f.nba_1412817_640x360_600.mp4",
-		"video:title": "Top 5 Plays From Spurs-Rockets Game 4",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F08%2F2e6c5b42-5b93-4838-98d5-8f7041cb8c4c.nba_1_1280x720.jpg",
-		"video:description": "Check out the top five plays from Game 4 between the San Antonio Spurs and Houston Rockets.",
-		"video:duration": "106"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/08/87e38d4d-429c-4a4c-a18a-99180879679a.nba_1412931_640x360_600.mp4",
-		"video:title": "GAME RECAP: Wizards 121, Celtics 102",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/https:%2F%2Fcdn.nba.net%2Fnba-drupal-prod%2F2017-05%2FWall_action_GM4.jpg",
-		"video:description": "Washington Wizards use a 26-0 third-quarter run to beat the Boston Celtics 121-102 and tie the second-round series at two games apiece.",
-		"video:duration": "157"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/08/c7cf451d-995a-44a5-924f-3dfd8fb9a491.nba_1413910_640x360_600.mp4",
-		"video:title": "NBATV Update: 3 Pointers 3",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F08%2F85373649-8abc-4344-9941-a62fd7321ba9.nba_1_1280x720.jpg",
-		"video:description": "Check out the latest headlines from around the association.",
-		"video:duration": "61"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/08/43ef7a8f-01ae-4cf9-aa8c-775951df7c31.nba_1414125_640x360_600.mp4",
-		"video:title": "NBA Game Spotlight: Warriors at Jazz Game 3",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F08%2Fbdb57c09-2c9f-49b2-877c-1f397462207b.nba_1_1280x720.jpg",
-		"video:description": "In advance of tonight's game at 9:00pm ET on TNT, take a look back at Game 3 where Kevin Durant led the Warriors to a 102-91 victory taking a 3-0 series lead.",
-		"video:duration": "131"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/08/13019997-c709-43d2-ba45-872b23745df1.nba_1412832_640x360_600.mp4",
-		"video:title": "Sunday's Top 5 Plays",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/https:%2F%2Fcdn.nba.net%2Fnba-drupal-prod%2F2017-05%2F_top_3.jpg",
-		"video:description": "Take a look at the top plays from this two-game Sunday in Round 2 of the NBA Playoffs.",
-		"video:duration": "65"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/08/6fc39a1e-7bb4-4563-9081-50fc76b1a34c.nba_1414152_640x360_600.mp4",
-		"video:title": "Big Baby Davis Plays 'Circle of Trust'",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F08%2F9eb02d1f-4c0a-4d2c-ba16-c253a6f29da0.nba_1_1280x720.jpg",
-		"video:description": "Which of his old Celtics teammates does Davis trust to: Recreate his championship trophy pose? Take care of his lemon tree? Apply sunscreen to his back?",
-		"video:duration": "411"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/08/812cfad5-8771-401d-90a8-7e9a86dc5e3d.nba_1414287_640x360_600.mp4",
-		"video:title": "Diaw Blocks Durant",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F08%2Fd7f3e03d-7418-4ec2-8253-ba64d8a71291.nba_1_1280x720.jpg",
-		"video:description": "Boris Diaw denies Kevin Durant and Durant gets whistled for the person foul as they head the other way.",
-		"video:duration": "46"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/08/50bd7cc7-748f-4641-a944-b15a950a0704.nba_1414455_640x360_600.mp4",
-		"video:title": "Hood Leaves the Game",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F08%2Fb04f87b6-82db-4291-ba36-09dc8430e45c.nba_1_1280x720.jpg",
-		"video:description": "Rodney Hood goes up and comes down hard early in the 4th quarter before leaving the game with a sprained right knee.",
-		"video:duration": "24"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/08/530a530c-c32c-4324-810b-a073620b00c0.nba_1414412_640x360_600.mp4",
-		"video:title": "Green Lobs to Durant",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F08%2Fcced0ae9-9f69-484e-9d0e-4c6f9c84d35f.nba_1_1280x720.jpg",
-		"video:description": "Draymond Green leads the break and lobs to Kevin Durant for the alley-oop slam.",
-		"video:duration": "29"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/08/b9136e1b-184d-4c13-a7d4-4487a867d62a.nba_1414468_640x360_600.mp4",
-		"video:title": "Green to Thompson",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F08%2F57dacca7-d516-4a43-8106-c3b9a2c8c8d5.nba_1_1280x720.jpg",
-		"video:description": "Draymond Green records his third-career Playoffs triple-double with this assist to Klay Thompson.",
-		"video:duration": "19"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/08/424c940e-86c3-4175-8b14-be46552e36aa.nba_1414258_640x360_600.mp4",
-		"video:title": "GameTime: Bob Myers",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F08%2Faa037890-327a-4a0d-992a-55e1ce0a5645.nba_1_1280x720.jpg",
-		"video:description": "GameTime crews talks with the Warriors GM Bob Myers about Steve Kerr surgery and Warriors.",
-		"video:duration": "410"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/08/3450ee88-850e-4d07-97b4-15d78da3a425.nba_1414299_640x360_600.mp4",
-		"video:title": "Gobert's Hoop and Harm",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F08%2Fa091b7f4-058d-4784-aa5e-913fed72ca10.nba_1_1280x720.jpg",
-		"video:description": "Rudy Gobert spins off JaVale Mcgee and drives to the rim for the layup and the foul.",
-		"video:duration": "26"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/08/59a6e4c3-665d-4f45-a129-7c45b976f567.nba_1414350_640x360_600.mp4",
-		"video:title": "Livingston to Durant",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F08%2F9db980d1-cb81-4ab2-b338-db207bda0cb2.nba_1_1280x720.jpg",
-		"video:description": "Shaun Livingston dishes a pretty dime to Kevin Durant for the dunk in transition.",
-		"video:duration": "18"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/08/0328138a-2062-4f69-85e1-1b643b160cfe.nba_1414406_640x360_600.mp4",
-		"video:title": "Gobert Goes Reverse",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F08%2F31428290-9c69-4946-8b0a-8cd8f641efe3.nba_1_1280x720.jpg",
-		"video:description": "Rudy Gobert pulls down the rebound and goes back up with a pretty reverse layup.",
-		"video:duration": "19"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/08/cb902084-3986-44fb-adaf-0900e5706531.nba_1412848_640x360_600.mp4",
-		"video:title": "Rockets React to Game 4 Win",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F08%2F3dbbd20e-8302-4708-a81b-f5ed1333a278.nba_1_1280x720.jpg",
-		"video:description": "Mike D'Antoni and James Harden meet with the media to discuss the Rockets Game 4 win.",
-		"video:duration": "310"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/08/fe7af271-2a71-4e0f-bf9a-84c68b7babcb.nba_1412887_640x360_600.mp4",
-		"video:title": "GAME RECAP: Rockets 125, Spurs 104",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/https:%2F%2Fcdn.nba.net%2Fnba-drupal-prod%2F2017-05%2FGettyImages-680139848%20%281%29.jpg",
-		"video:description": "James Harden scores 28 points, Eric Gordon adds 22 as the Houston Rockets rebounded from consecutive losses to beat the San Antonio Spurs to tie the series.",
-		"video:duration": "183"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/08/77dee837-f452-49bf-afa9-b1b54b400f8d.nba_1412838_640x360_600.mp4",
-		"video:title": "Inside the NBA: EJ Neat-O Stat",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F08%2Fe8205083-7f9f-40c7-8ad7-d22e49473ec4.nba_1_1280x720.jpg",
-		"video:description": "EJ, Kenny and Chuck receive a special delivery from the San Antonio Express.",
-		"video:duration": "166"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/08/42aaa821-40e4-4616-9922-7de011b3cb56.nba_1414494_640x360_600.mp4",
-		"video:title": "Highlights: Stephen Curry",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/https:%2F%2Fcdn.nba.net%2Fnba-drupal-prod%2F2017-05%2Fcurry-layup-gm4.jpg",
-		"video:description": "Stephen Curry scores a game-high 30 points in the Warriors Game 4 win over the Jazz.",
-		"video:duration": "109"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/08/00c7ca16-69ef-43cb-9766-b34235ac949a.nba_1414493_640x360_600.mp4",
-		"video:title": "Green Notches Triple-Double",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/https:%2F%2Fcdn.nba.net%2Fnba-drupal-prod%2F2017-05%2Fgreen-iso-gm4.jpg",
-		"video:description": "Draymond Green does it all as he tallies a triple-double of 17 points, 10 rebounds, and 11 assists in Game 4 against the Jazz.",
-		"video:duration": "112"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/08/887c4e35-07a5-4ced-be07-e58f25e5105a.nba_1414021_640x360_600.mp4",
-		"video:title": "Nene Out for Rest of Playoffs",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F08%2F14f2c8e4-d7eb-40bc-ac3c-82c3379271a5.nba_1_1280x720.jpg",
-		"video:description": "Check out the latest headlines from around the association, including injury news and an early look at free agency.",
-		"video:duration": "57"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/08/cfd96b31-45e6-4a7c-ba4e-a32e3e96c57d.nba_1413912_640x360_600.mp4",
-		"video:title": "NBA TV Update",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F08%2Feb8e472a-4502-4b1d-ae95-c7215b71b8cc.nba_1_1280x720.jpg",
-		"video:description": "Check out the latest headlines from around the association.",
-		"video:duration": "65"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/08/6af62121-54c7-4ec6-8ab3-c5c9c1959251.nba_1414315_640x360_600.mp4",
-		"video:title": "Green Slams",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F08%2F3c46a1d4-76ab-4183-ac67-196a19f76c62.nba_1_1280x720.jpg",
-		"video:description": "Draymond Green fakes the pass and drives to the hole for the big one-handed flush.",
-		"video:duration": "24"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/08/fe0b4962-5651-416a-a3b2-d90298697389.nba_1414290_640x360_600.mp4",
-		"video:title": "Curry Redeems Himself",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F08%2Fdf6f5149-2e3f-444a-b9b7-07a3037bdab3.nba_1_1280x720.jpg",
-		"video:description": "Stephen Curry chucks up the rare airball but redeems himself moments later with a 3-pointer.",
-		"video:duration": "29"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/07/58ce0377-ed79-46c9-9fa5-692ce3c7eb0d.nba_1412742_640x360_600.mp4",
-		"video:title": "Handle of the Night - Kyrie Irving",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/https:%2F%2Fcdn.nba.net%2Fnba-drupal-prod%2F2017-05%2F_hotn_2.jpg",
-		"video:description": "Kyrie Irving puts on a display with the dribbling moves to beat Norman Powell to the hoop and score with the left hand.",
-		"video:duration": "31"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/07/fa2bcfcb-41d9-4c91-b18a-9dc026f445f1.nba_1412733_640x360_600.mp4",
-		"video:title": "Steal of the Night - Isaiah Thomas",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/https:%2F%2Fcdn.nba.net%2Fnba-drupal-prod%2F2017-05%2F_sotn_1.jpg",
-		"video:description": "Isaiah Thomas jumps out for the steal then finishes at the other end with the bucket.",
-		"video:duration": "26"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/07/b2cd9d3f-3331-4d08-a009-142ea749ef39.nba_1412744_640x360_600.mp4",
-		"video:title": "Play of the Day - John Wall",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/https:%2F%2Fcdn.nba.net%2Fnba-drupal-prod%2F2017-05%2F_wall.jpg",
-		"video:description": "John Wall gets to the bucket off the nice spin move then drops off the no look dish to Marcin Gortat for the score.",
-		"video:duration": "28"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/07/9d9acff6-5ca0-4094-ace7-bc06dcaaf66e.nba_1412740_640x360_600.mp4",
-		"video:title": "Assist of the Night - John Wall",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/https:%2F%2Fcdn.nba.net%2Fnba-drupal-prod%2F2017-05%2F_aotn2.jpg",
-		"video:description": "John Wall gets the beautiful no look pass to Marcin Gortat for the bucket.",
-		"video:duration": "23"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/08/2ab6f6ef-2ba8-4804-952f-c8e7ec6711e1.nba_1414108_640x360_600.mp4",
-		"video:title": "Raptors-Cavaliers 2017 Conference Semifinals Series Recap",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/https:%2F%2Fcdn.nba.net%2Fnba-drupal-prod%2F2017-05%2Flebron_cavs_celebrate_050717.jpg",
-		"video:description": "Relive the best moments and reactions from the Eastern Conference Semifinals series between the Toronto Raptors and Cleveland Cavaliers.",
-		"video:duration": "228"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/08/0da261bd-7ea3-4008-bad4-0031c9efe087.nba_1414511_640x360_600.mp4",
-		"video:title": "Jazz vs. Warriors Game 4 Top 5 Plays",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F09%2Feb1297b5-9b3e-4266-abf5-9cc3e2d9dcf1.nba_1_1280x720.jpg",
-		"video:description": "Check out the Top 5 plays from the Game 4 matchup between the Jazz vs. Warriors.",
-		"video:duration": "71"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/09/efe20b0d-0547-4a54-8d4e-b7a115fa4221.nba_1415553_640x360_600.mp4",
-		"video:title": "Shaq Says He'll Run for Sheriff in 2020",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F09%2F9af1cbb7-a06f-4267-941a-0253957e4a96.nba_1_1280x720.jpg",
-		"video:description": "Here are the latest headlines in the NBA, including Shaquille O'Neal's political aspirations and Ray Allen's response to the Celtics reunion on Area 21 Monday night.",
-		"video:duration": "66"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/09/0e4a309e-2e27-48fc-9302-c7a803337e0f.nba_1414564_640x360_600.mp4",
-		"video:title": "Monday's Top 5 Plays",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/https:%2F%2Fcdn.nba.net%2Fnba-drupal-prod%2F2017-05%2F_top_5.jpg",
-		"video:description": "Take a look at an exciting top five countdown from Game 4 of the Warriors vs. Jazz series in Round 2 of the NBA Playoffs.",
-		"video:duration": "96"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/09/8ae014f8-24f6-4dfc-9a80-c6ee3420f0f7.nba_1416330_640x360_600.mp4",
-		"video:title": "Block of the Night - Kawhi Leonard",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/https:%2F%2Fcdn.nba.net%2Fnba-drupal-prod%2F2017-05%2F_botn22.jpg",
-		"video:description": "Kawhi Leonard blocks Clint Capela then drives coast-to-coast for the nice reverse layup at the other end.",
-		"video:duration": "73"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/09/d12c78ac-b3f2-4a2d-b946-366e3c729ba4.nba_1414585_640x360_600.mp4",
-		"video:title": "Golden State vs. Utah - 5/08/2017",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/https:%2F%2Fcdn.nba.net%2Fnba-drupal-prod%2F2017-05%2F_steph.jpg",
-		"video:description": "Steph Curry pours in 30 points for the Warriors as they defeat the Jazz in Game 4 to complete the second round sweep.",
-		"video:duration": "105"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/09/408776e7-afe8-4e33-8185-466c2d916a9e.nba_1414551_640x360_600.mp4",
-		"video:title": "Arena Link: Draymond Green",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F09%2Fec652966-2afa-467b-8afa-5da97db17d34.nba_1_1280x720.jpg",
-		"video:description": "Draymond Green joins GameTime via Arena Link following the Warriors Game 4 win over the Jazz.",
-		"video:duration": "329"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/09/1a048ae4-fc5d-4284-9200-1cd5a03599d1.nba_1414521_640x360_600.mp4",
-		"video:title": "Handle of the Night - Steph Curry",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/https:%2F%2Fcdn.nba.net%2Fnba-drupal-prod%2F2017-05%2F_hotn_3.jpg",
-		"video:description": "Steph Curry drives and makes the tough hanging layup over Rudy Gobert.",
-		"video:duration": "40"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/09/0a786beb-b277-4deb-8b9e-6d658f30c8e8.nba_1416393_640x360_600.mp4",
-		"video:title": "Inside The NBA: Rockets-Spurs Game 5 Analysis",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F09%2F00b7acfa-5658-4fc9-bca2-8e011fd74788.nba_1_1280x720.jpg",
-		"video:description": "Kenny, Shaq and Chuck break down Game 5 between the Rockets and the Spurs.",
-		"video:duration": "388"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/09/017c3aa1-b5e0-476e-82ff-fe1316f60c63.nba_1416401_640x360_600.mp4",
-		"video:title": "GameTime: Rockets-Spurs Game 5 Analysis",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F09%2F1c99bce9-ad76-435e-8b49-3a5c23100602.nba_1_1280x720.jpg",
-		"video:description": "The GameTime crew discusses the San Antonio Spurs thrilling overtime victory over the Houston Rockets in Game 5.",
-		"video:duration": "264"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/09/4ecf5ec4-cf7b-4f30-a9b6-a90113382d54.nba_1416418_640x360_600.mp4",
-		"video:title": "GameTime: Making The Call",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F09%2F4625cb50-dd3f-4461-b025-3cf07e2db8bb.nba_1_1280x720.jpg",
-		"video:description": "Joe Borgia of the Replay and Referee Operations Center joins GameTime to speak on some of the tough calls made during Game 5 between Houston and San Antonio.",
-		"video:duration": "148"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/09/0d03ec81-286f-4866-9af7-a83d3d58ec50.nba_1416103_640x360_600.mp4",
-		"video:title": "Harden Gets Wedgied",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F09%2F707be5fc-124f-4d90-a10a-ca0b2d76633c.nba_1_1280x720.jpg",
-		"video:description": "James Harden attempts a layup off the drive but the ball ends up wedgied in between the rim and the backboard.",
-		"video:duration": "18"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/09/4deb878c-ecb9-4dcc-8057-8ca3d0640a2b.nba_1416109_640x360_600.mp4",
-		"video:title": "Beverley Finishes Through Contact",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F09%2Fdfb4ea4c-a78e-4b44-a4ba-5661c8334707.nba_1_1280x720.jpg",
-		"video:description": "Patrick Beverley drives on Patty Mills and powers his way through contact for the layup plus the foul.",
-		"video:duration": "23"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/09/3852800f-82cc-427b-b9cd-9bbf40e83ebf.nba_1416118_640x360_600.mp4",
-		"video:title": "Ginobili Gets To The Rim",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F09%2Fd3ae880c-681a-4cec-b092-da15418a9590.nba_1_1280x720.jpg",
-		"video:description": "Manu Ginobili drives past his defender then finishes with a left handed layup.",
-		"video:duration": "19"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/09/7490fb46-08ae-4c23-ae20-9a4378d1f493.nba_1416386_640x360_600.mp4",
-		"video:title": "May 09: The Fast Break",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/https:%2F%2Fcdn.nba.net%2Fnba-drupal-prod%2F2017-05%2Ffastbreak_ginobli_0.jpg",
-		"video:description": "Recap who won from Game 5 between the Rockets and the Spurs.",
-		"video:duration": "60"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/09/afadca52-86e7-454a-9586-8baa5e100c5d.nba_1416250_640x360_600.mp4",
-		"video:title": "Leonard Ankle Injury",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F09%2F9aa07520-6836-4445-a050-e91c698c89ca.nba_1_1280x720.jpg",
-		"video:description": "Kawhi Leonard rolls his ankle in the third quarter as he accidentally steps on James Harden's foot.",
-		"video:duration": "25"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/09/ea0a8f03-dea0-48c3-a91d-95f8496418e9.nba_1414556_640x360_600.mp4",
-		"video:title": "Top Plays - 5/08/2017",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/https:%2F%2Fcdn.nba.net%2Fnba-drupal-prod%2F2017-05%2F_top_6.jpg",
-		"video:description": "Check out the top action from this Monday in the NBA Playoffs.",
-		"video:duration": "82"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/09/3a170f02-c03c-4926-91cb-394e24355c4b.nba_1416344_640x360_600.mp4",
-		"video:title": "Play of the Day - Manu Ginobili",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F09%2Fdf6e1ae6-0d4e-4ee7-a778-92cb74048c90.nba_1_1280x720.jpg",
-		"video:description": "Manu Ginobili gets the clean block on James Harden from behind to seal the win for the Spurs in overtime.",
-		"video:duration": "55"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/09/478c671b-b15d-4d45-bff9-259828dc00f5.nba_1416307_640x360_600.mp4",
-		"video:title": "Harden Notches A Triple-Double",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/https:%2F%2Fcdn.nba.net%2Fnba-drupal-prod%2F2017-05%2Fharden-drive-050917.jpg",
-		"video:description": "James Harden scores 33 points with 10 rebounds and 10 assists in Game 5 versus San Antonio.",
-		"video:duration": "127"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/09/dc693a05-2515-438e-8ac5-bd1bd813dc6e.nba_1414519_640x360_600.mp4",
-		"video:title": "Move of the Night - Rudy Gobert",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/https:%2F%2Fcdn.nba.net%2Fnba-drupal-prod%2F2017-05%2F_motn_3.jpg",
-		"video:description": "Rudy Gobert gets the rebound then makes the nice move around Draymond Green for the reverse finish.",
-		"video:duration": "32"
-	},
 	{
 		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/08/78d10d9f-6b7c-4541-b665-7b797e1837e9.nba_1414392_640x360_600.mp4",
 		"video:title": "GameTime: Rockets vs. Spurs Game 5 Preview",
@@ -54475,69 +53952,6 @@ module.exports = [
 		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/https:%2F%2Fcdn.nba.net%2Fnba-drupal-prod%2F2017-05%2Fsteph-curry-walkoff.jpg",
 		"video:description": "Relive all the best moment and reactions from the Warriors-Jazz Western 2017 Conference semifinal series.",
 		"video:duration": "229"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/09/3ba063f8-09fc-4e5e-8bf1-36f8a0ca5ba3.nba_1415964_640x360_600.mp4",
-		"video:title": "GameTime: Allie LaForce",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F09%2Fca82b61a-2053-4afe-a0f0-9852de85e93a.nba_1_1280x720.jpg",
-		"video:description": "TNT's Allie LaForce reports live from San Antonio to discuss certain adjustments that the Spurs and Rockets will make heading into Game 5.",
-		"video:duration": "141"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/09/0e88a238-cef0-4ed8-9d61-c8668c60172d.nba_1415849_640x360_600.mp4",
-		"video:title": "Wizards-Celtics Game 5 Preview",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F09%2F74ae0b52-e979-48e5-a151-99208b563396.nba_1_1280x720.jpg",
-		"video:description": "Kelly Olynyk addresses comments about him being a dirty player and Isaiah Thomas shares his thoughts as well.",
-		"video:duration": "54"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/09/32659b5e-643d-4c04-97b6-2a23dc035d75.nba_1416040_640x360_600.mp4",
-		"video:title": "GameTime: Wizards-Celtics Game 5 Preview",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F09%2F45331688-b8ea-483f-ac2f-dab70a5b7fe9.nba_1_1280x720.jpg",
-		"video:description": "Isiah Thomas, Steve Smith and Malcolm Brogdon preview Game 5 between the Wizards and the Celtics.",
-		"video:duration": "164"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/09/d663c908-62fd-4e60-950f-ec872e8ef5ad.nba_1414538_640x360_600.mp4",
-		"video:title": "Area 21: New Players in System",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F09%2F06bc37ac-f1a7-4895-a87e-72479a808ebb.nba_1_1280x720.jpg",
-		"video:description": "Area 21 crew talks about about once players left trying to add players back to the team with the same grit.",
-		"video:duration": "800"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/09/6255d1c2-5db0-4597-894c-1be72d4cd37c.nba_1416096_640x360_600.mp4",
-		"video:title": "Harden To The Rack",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F09%2F30ab13b7-d8c3-4f12-bea1-aae43e1e32a9.nba_1_1280x720.jpg",
-		"video:description": "James Harden drives past his defender and finishes with a right handed layup.",
-		"video:duration": "26"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/09/79214111-c031-4be5-bf6a-82c45bae5e6e.nba_1416100_640x360_600.mp4",
-		"video:title": "GameTime: Ujiri's Comments On Raptors",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F09%2F09e22f17-f11b-48dc-8c2e-7e8e0d0f56f9.nba_1_1280x720.jpg",
-		"video:description": "Isiah Thomas and Steve Smith respond to the Raptors' general manager Masai Ujiri comments on the Raptors' style of play and stressing the need for a \"culture reset\".",
-		"video:duration": "256"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/09/e4777847-d472-4c84-923c-555d1cc38a1b.nba_1416321_640x360_600.mp4",
-		"video:title": "Ginobili Ties The Game",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F09%2Fb12b967f-1bf0-44d1-b73d-e738173ee8d5.nba_1_1280x720.jpg",
-		"video:description": "Manu Ginobili drives to the rim and finishes with a tough left handed layup to tie the game 101-101.",
-		"video:duration": "29"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/09/b850894d-949e-4fbc-be90-e21fb4bffb3f.nba_1416403_640x360_600.mp4",
-		"video:title": "Inside The NBA: Wizards-Celtics Game 5 Preview",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F09%2F945bb8b9-39af-44b5-9e8e-f0fbfb1d3e2d.nba_1_1280x720.jpg",
-		"video:description": "Kenny, Chuck and Shaq look ahead to Game 5 of the Wizards-Celtics series.",
-		"video:duration": "304"
-	},
-	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/09/5f9050c5-bdb5-480c-9d61-035ab44fca1f.nba_1416416_640x360_600.mp4",
-		"video:title": "Rockets Let One Slip Away",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F09%2F2e57762e-4b13-42cf-a5cc-339598090b5a.nba_1_1280x720.jpg",
-		"video:description": "Mike D'Antoni and James Harden address media after losing game 5 in overtime to the Spurs.",
-		"video:duration": "126"
 	},
 	{
 		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/09/a6403759-23f8-46fe-992c-d1fa35c60759.nba_1414571_640x360_600.mp4",
@@ -55415,11 +54829,11 @@ module.exports = [
 		"video:duration": "18"
 	},
 	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/12/1edc06a1-184e-4515-8558-0eb9944ced83.nba_1421834_640x360_600.mp4",
-		"video:title": "Mother's Day Wishes from NBA Stars",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F12%2F8cb96fed-2fe8-4e29-b0be-6659cf63b678.nba_1_1280x720.jpg",
-		"video:description": "NBA stars wish their Mother's a very happy Mother's Day",
-		"video:duration": "59"
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/12/2624be5e-1e13-4d00-bbb5-f5d3747f55cf.nba_1421664_640x360_600.mp4",
+		"video:title": "Warriors-Spurs Predictions",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/https:%2F%2Fcdn.nba.net%2Fnba-drupal-prod%2F2017-05%2Fkawhi-durant-051217.jpg",
+		"video:description": "Do the Spurs have a shot at knocking off the Warriors? The Starters debate.",
+		"video:duration": "185"
 	},
 	{
 		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/11/79b37753-167a-4f6e-b13c-66bb60870f5d.nba_1419991_640x360_600.mp4",
@@ -55919,11 +55333,11 @@ module.exports = [
 		"video:duration": "379"
 	},
 	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/12/2624be5e-1e13-4d00-bbb5-f5d3747f55cf.nba_1421664_640x360_600.mp4",
-		"video:title": "Warriors-Spurs Predictions",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/https:%2F%2Fcdn.nba.net%2Fnba-drupal-prod%2F2017-05%2Fkawhi-durant-051217.jpg",
-		"video:description": "Do the Spurs have a shot at knocking off the Warriors? The Starters debate.",
-		"video:duration": "185"
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/12/1edc06a1-184e-4515-8558-0eb9944ced83.nba_1421834_640x360_600.mp4",
+		"video:title": "Mother's Day Wishes from NBA Stars",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F12%2F8cb96fed-2fe8-4e29-b0be-6659cf63b678.nba_1_1280x720.jpg",
+		"video:description": "NBA stars wish their Mother's a very happy Mother's Day",
+		"video:duration": "59"
 	},
 	{
 		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/13/8b4dcd43-9b16-4f8f-8cd4-7a851b370c52.nba_1422866_640x360_600.mp4",
@@ -56500,13 +55914,6 @@ module.exports = [
 		"video:duration": "15"
 	},
 	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/15/a83e1fe4-9ba2-4ba8-9bf4-fa9b5ee2ca4d.nba_1425006_640x360_600.mp4",
-		"video:title": "NBATV Update",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F15%2F54273954-33eb-4761-98cd-e4cc66edf106.nba_1_1280x720.jpg",
-		"video:description": "Check out the latest headlines from around the association.",
-		"video:duration": "84"
-	},
-	{
 		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/15/6e8a7df5-b2ed-4afc-90ff-9986b8ff8856.nba_1425406_640x360_600.mp4",
 		"video:title": "GameTime: David Aldridge",
 		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F15%2F5b16e324-409f-48aa-a50d-512c464e777d.nba_1_1280x720.jpg",
@@ -56780,6 +56187,13 @@ module.exports = [
 		"video:duration": "500"
 	},
 	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/15/3309ad90-39ed-49bd-9277-09c225fdc142.nba_1424767_640x360_600.mp4",
+		"video:title": "Get Ready for Wizards-Celtics Game 7 Tonight!",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F15%2Fa58437de-4f13-4658-8264-f935810f3670.nba_1_1280x720.jpg",
+		"video:description": "In advance of tonight's Wizards-Celtics game at 8:00pm ET on TNT, take a look back as John Wall knocked down the go-ahead three-pointer with 3.5 seconds left to defeat Boston 92-91 and force a decisive Game 7.",
+		"video:duration": "51"
+	},
+	{
 		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/15/49691c58-f87a-4228-8044-def938f9410e.nba_1425371_640x360_600.mp4",
 		"video:title": "2017 NBA Draft Lottery Prediction",
 		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/https:%2F%2Fcdn.nba.net%2Fnba-drupal-prod%2F2017-05%2Fstarters_draft_lottery.jpeg",
@@ -56801,11 +56215,11 @@ module.exports = [
 		"video:duration": "17"
 	},
 	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/15/3309ad90-39ed-49bd-9277-09c225fdc142.nba_1424767_640x360_600.mp4",
-		"video:title": "Get Ready for Wizards-Celtics Game 7 Tonight!",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F15%2Fa58437de-4f13-4658-8264-f935810f3670.nba_1_1280x720.jpg",
-		"video:description": "In advance of tonight's Wizards-Celtics game at 8:00pm ET on TNT, take a look back as John Wall knocked down the go-ahead three-pointer with 3.5 seconds left to defeat Boston 92-91 and force a decisive Game 7.",
-		"video:duration": "51"
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/15/a83e1fe4-9ba2-4ba8-9bf4-fa9b5ee2ca4d.nba_1425006_640x360_600.mp4",
+		"video:title": "NBATV Update",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F15%2F54273954-33eb-4761-98cd-e4cc66edf106.nba_1_1280x720.jpg",
+		"video:description": "Check out the latest headlines from around the association.",
+		"video:duration": "84"
 	},
 	{
 		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/16/f5c98c9e-fa01-43c4-8db1-cd21fe7b3ae3.nba_1425886_640x360_600.mp4",
@@ -56836,11 +56250,11 @@ module.exports = [
 		"video:duration": "37"
 	},
 	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/16/a9e9752c-d1c8-4edd-adfe-e64f80734f37.nba_1426543_640x360_600.mp4",
-		"video:title": "Best of the NBA's 2nd Round in Phantom - \"Battle Symphony by Linkin Park\"",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F16%2F37146ac4-6c89-4590-95a6-cc168a6c1b40.nba_1_1280x720.jpg",
-		"video:description": "A special slo-mo look at the second round of the NBA Playoffs set to @LinkinPark's \"Battle Symphony\".",
-		"video:duration": "110"
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/16/5b347829-6e0b-4db4-bb0d-2be8f31031cb.nba_1425893_640x360_600.mp4",
+		"video:title": "Arena Link: Kelly Olynyk",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F16%2Fb0744281-1f8c-426b-b3c3-9899dcbf30a6.nba_1_1280x720.jpg",
+		"video:description": "Kelly Olynyk joins Game Time following his big night off the bench in the Celtics' Game 7 win over the Wizards.",
+		"video:duration": "179"
 	},
 	{
 		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/16/7cc2514f-e0cd-4400-80ed-80e49ac6f65e.nba_1426663_640x360_600.mp4",
@@ -56850,11 +56264,11 @@ module.exports = [
 		"video:duration": "147"
 	},
 	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/16/5b347829-6e0b-4db4-bb0d-2be8f31031cb.nba_1425893_640x360_600.mp4",
-		"video:title": "Arena Link: Kelly Olynyk",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F16%2Fb0744281-1f8c-426b-b3c3-9899dcbf30a6.nba_1_1280x720.jpg",
-		"video:description": "Kelly Olynyk joins Game Time following his big night off the bench in the Celtics' Game 7 win over the Wizards.",
-		"video:duration": "179"
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/16/65dfe04b-9d1b-4c78-94c6-49967a504cc6.nba_1425903_640x360_600.mp4",
+		"video:title": "Play of the Day - Jaylen Brown",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/https:%2F%2Fcdn.nba.net%2Fnba-drupal-prod%2F2017-05%2Fpod_brown.jpg",
+		"video:description": "Marcus Smart tosses the lob to Jayken Brown for the reverse layup.",
+		"video:duration": "34"
 	},
 	{
 		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/16/ac1b7308-e381-40b0-a9fc-2ed744343de5.nba_1425877_640x360_600.mp4",
@@ -57319,11 +56733,11 @@ module.exports = [
 		"video:duration": "68"
 	},
 	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/16/65dfe04b-9d1b-4c78-94c6-49967a504cc6.nba_1425903_640x360_600.mp4",
-		"video:title": "Play of the Day - Jaylen Brown",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/https:%2F%2Fcdn.nba.net%2Fnba-drupal-prod%2F2017-05%2Fpod_brown.jpg",
-		"video:description": "Marcus Smart tosses the lob to Jayken Brown for the reverse layup.",
-		"video:duration": "34"
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/16/a9e9752c-d1c8-4edd-adfe-e64f80734f37.nba_1426543_640x360_600.mp4",
+		"video:title": "Best of the NBA's 2nd Round in Phantom - \"Battle Symphony by Linkin Park\"",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F16%2F37146ac4-6c89-4590-95a6-cc168a6c1b40.nba_1_1280x720.jpg",
+		"video:description": "A special slo-mo look at the second round of the NBA Playoffs set to @LinkinPark's \"Battle Symphony\".",
+		"video:duration": "110"
 	},
 	{
 		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/17/d120d37d-5697-4616-81be-ff64d1365f62.nba_1427518_640x360_600.mp4",
@@ -58110,18 +57524,18 @@ module.exports = [
 		"video:duration": "172"
 	},
 	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/19/c99ff575-6834-4add-9869-df29beba22f4.nba_1432884_640x360_600.mp4",
-		"video:title": "GameTime: Chris Webber",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F19%2F776b0eec-9e5b-4327-901a-057384e7258b.nba_1_1280x720.jpg",
-		"video:description": "Chris Webber joins the GameTime crew from Boston ahead of game 2 of the Eastern Conference Finales.",
-		"video:duration": "384"
-	},
-	{
 		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/19/14224c72-bcb1-4ae7-8193-51fc9c1373b8.nba_1432749_640x360_600.mp4",
 		"video:title": "2017 NBA Awards: Defensive Player of the Year Nominees",
 		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F19%2Feadad71c-a85a-4675-afd9-e788b3b28ca8.nba_1_1280x720.jpg",
 		"video:description": "San Antonio's Kawhi Leonard, Utah's Rudy Gobert, and Golden State's Draymond Green are nominees for the 2017 Kia Defensive Player of the Year Award.",
 		"video:duration": "33"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/19/c99ff575-6834-4add-9869-df29beba22f4.nba_1432884_640x360_600.mp4",
+		"video:title": "GameTime: Chris Webber",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F19%2F776b0eec-9e5b-4327-901a-057384e7258b.nba_1_1280x720.jpg",
+		"video:description": "Chris Webber joins the GameTime crew from Boston ahead of game 2 of the Eastern Conference Finales.",
+		"video:duration": "384"
 	},
 	{
 		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/18/db05c409-5d99-4071-b3ce-fdaeec6b7c81.nba_1430234_640x360_600.mp4",
@@ -58985,11 +58399,11 @@ module.exports = [
 		"video:duration": "148"
 	},
 	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/21/63db5096-159c-46a6-8e96-4587a94770fc.nba_1435106_640x360_600.mp4",
-		"video:title": "Spurs Practice: Gregg Popovich",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F21%2Fbe550d68-fba6-4b65-9543-64ee9575e7ac.nba_1_1280x720.jpg",
-		"video:description": "Gregg Popovich addresses the media following Sunday's morning practice.",
-		"video:duration": "280"
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/21/da50cecb-db8b-4760-9044-e0f9b5e05df7.nba_1434387_640x360_600.mp4",
+		"video:title": "GameTime: What Team is Having the Most Impressive Playoff Run?",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F21%2Fe677aae4-1523-4987-a320-d7e62b864bef.nba_1_1280x720.jpg",
+		"video:description": "The GameTime crew discusses how the Warriors remain unbeaten in the playoffs and predicts who will end up on top if the Warriors-Cavaliers face off in the NBA Finals.",
+		"video:duration": "441"
 	},
 	{
 		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/21/07c48033-364d-4d67-b141-fa7a18abd5f2.nba_1434385_640x360_600.mp4",
@@ -59307,11 +58721,11 @@ module.exports = [
 		"video:duration": "125"
 	},
 	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/21/da50cecb-db8b-4760-9044-e0f9b5e05df7.nba_1434387_640x360_600.mp4",
-		"video:title": "GameTime: What Team is Having the Most Impressive Playoff Run?",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F21%2Fe677aae4-1523-4987-a320-d7e62b864bef.nba_1_1280x720.jpg",
-		"video:description": "The GameTime crew discusses how the Warriors remain unbeaten in the playoffs and predicts who will end up on top if the Warriors-Cavaliers face off in the NBA Finals.",
-		"video:duration": "441"
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/21/63db5096-159c-46a6-8e96-4587a94770fc.nba_1435106_640x360_600.mp4",
+		"video:title": "Spurs Practice: Gregg Popovich",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F21%2Fbe550d68-fba6-4b65-9543-64ee9575e7ac.nba_1_1280x720.jpg",
+		"video:description": "Gregg Popovich addresses the media following Sunday's morning practice.",
+		"video:duration": "280"
 	},
 	{
 		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/22/18539f2f-6825-4258-92ec-4f9503ccf0e2.nba_1435445_640x360_600.mp4",
@@ -59767,6 +59181,13 @@ module.exports = [
 		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F22%2F0435ba48-a3ef-408b-a7ec-08e68dd5523c.nba_1_1280x720.jpg",
 		"video:description": "The Game Time crew previews Monday's clash.",
 		"video:duration": "143"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/23/2ec0fce8-a95a-45d1-aa36-43585d8c4fdc.nba_1437172_640x360_600.mp4",
+		"video:title": "Popovich Talks Manu Sendoff",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F23%2F796966c2-7f7c-441e-89a9-4acdedee456e.nba_1_1280x720.jpg",
+		"video:description": "Gregg Popovich talks postgame about Manu Ginobili and why he started Game 4.",
+		"video:duration": "123"
 	},
 	{
 		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/23/3c4f627e-75d6-4a67-a59a-280d3d8f4760.nba_1437163_640x360_600.mp4",
@@ -60315,13 +59736,6 @@ module.exports = [
 		"video:duration": "361"
 	},
 	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/23/2ec0fce8-a95a-45d1-aa36-43585d8c4fdc.nba_1437172_640x360_600.mp4",
-		"video:title": "Popovich Talks Manu Sendoff",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F23%2F796966c2-7f7c-441e-89a9-4acdedee456e.nba_1_1280x720.jpg",
-		"video:description": "Gregg Popovich talks postgame about Manu Ginobili and why he started Game 4.",
-		"video:duration": "123"
-	},
-	{
 		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/23/925b6e6b-47fc-49e7-8ab2-ec69b54f7c3e.nba_1440978_640x360_600.mp4",
 		"video:title": "Kyrie's Monster Night",
 		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/https:%2F%2Fcdn.nba.net%2Fnba-drupal-prod%2F2017-05%2FGettyImages-687502644.jpg",
@@ -60329,18 +59743,53 @@ module.exports = [
 		"video:duration": "116"
 	},
 	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/24/640a573f-b667-4940-9f30-f4f5a4959ad9.nba_1443146_640x360_600.mp4",
-		"video:title": "NBATV Update",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F24%2Fcfadf1b9-354a-4e86-b879-4b50146deb30.nba_1_1280x720.jpg",
-		"video:description": "All the latest news from around the NBA.",
-		"video:duration": "68"
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/24/42d997a1-26c5-4294-b98a-99b16781ee6f.nba_1443690_640x360_600.mp4",
+		"video:title": "Cavaliers Looking to Close out Series",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F24%2Fbe466b88-584f-40f6-a768-bb4861022b88.nba_1_1280x720.jpg",
+		"video:description": "Tristan Thompson says Cavaliers need to throw the first punch in Game 5 in order to close out the series in Boston.",
+		"video:duration": "65"
 	},
 	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/24/b1e44ce8-dd21-4b1f-9ebe-5b1e7e252045.nba_1442953_640x360_600.mp4",
-		"video:title": "NBATV Update: 3 Pointers at 3",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F24%2F547fbc00-4d2e-415c-8ce3-a50967588036.nba_1_1280x720.jpg",
-		"video:description": "Check out the latest headlines from around the association.",
-		"video:duration": "72"
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/24/519bbac7-6c8e-4b2e-a577-260d364a5504.nba_1443745_640x360_600.mp4",
+		"video:title": "GameTime: Boston vs. Cleveland Game 5 Preview",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F24%2F4563f6eb-5207-41df-8264-4777617c6d74.nba_1_1280x720.jpg",
+		"video:description": "GameTime previews Game 5 of the Celtics vs. Cavs series and discuss whether or not the Cavs can close the series.",
+		"video:duration": "121"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/24/fbc73a9f-1217-487f-9478-2df3cbd31cb2.nba_1443448_640x360_600.mp4",
+		"video:title": "Top 5 Playoff Performances by a LeBron Teammate",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/https:%2F%2Fcdn.nba.net%2Fnba-drupal-prod%2F2017-05%2Fkyrie-irving-emotion.jpg",
+		"video:description": "After watching Kyrie Irving scored 42 in Game 4 against the Celtics, The Starters started discussing the best playoff games by a LeBron James teammate over his 14-year career. After digging into the archive, they came up with this Top 5 list.",
+		"video:duration": "157"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/24/466295da-2fbd-4216-91e7-69bd7bde2d29.nba_1443443_640x360_600.mp4",
+		"video:title": "LeBron James Under The Weather?",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/https:%2F%2Fcdn.nba.net%2Fnba-drupal-prod%2F2017-05%2Flebron-james-game-4-fourth-foul.jpg",
+		"video:description": "LeBron James slowed down in Game 3 of the Eastern Finals and teammate Richard Jefferson suggested that an illness could be the cause.",
+		"video:duration": "189"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/24/9cc6f591-a1c2-4787-9660-1a2e606d6ac8.nba_1443706_640x360_600.mp4",
+		"video:title": "Kyrie Goes Next Level",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/https:%2F%2Fcdn.nba.net%2Fnba-drupal-prod%2F2017-05%2FGettyImages-687499282.jpg",
+		"video:description": "The GameTime crew discuss how Kyrie Irving went next level in Game 4 of the Eastern Conference Finals.",
+		"video:duration": "105"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/24/2e4b2043-5de0-4fef-83f8-b9a374f49869.nba_1443751_640x360_600.mp4",
+		"video:title": "Warriors Third Straight Finals",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/https:%2F%2Fcdn.nba.net%2Fnba-drupal-prod%2F2017-05%2FGettyImages-687263626.jpg",
+		"video:description": "Jared Greenberg and Isiah Thomas discuss the Warriors advancing to their third straight finals and the pressure that goes along with it.",
+		"video:duration": "119"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/23/3ebcc1a3-2ffa-4b69-a2af-40aadd004333.nba_1439658_640x360_600.mp4",
+		"video:title": "The Dunk King Ep. 4: Jordan Southerland Final Dunk",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F23%2F7054a3a7-aa33-4093-8ece-03b374580ad3.nba_1_1280x720.jpg",
+		"video:description": "Jordan Southerland makes his second dunk in the Finals of the Dunk King.",
+		"video:duration": "71"
 	},
 	{
 		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/23/7d572e4f-e1cd-4479-bccc-ea09050589f0.nba_1439549_640x360_600.mp4",
@@ -60504,11 +59953,564 @@ module.exports = [
 		"video:duration": "198"
 	},
 	{
-		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/23/3ebcc1a3-2ffa-4b69-a2af-40aadd004333.nba_1439658_640x360_600.mp4",
-		"video:title": "The Dunk King Ep. 4: Jordan Southerland Final Dunk",
-		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F23%2F7054a3a7-aa33-4093-8ece-03b374580ad3.nba_1_1280x720.jpg",
-		"video:description": "Jordan Southerland makes his second dunk in the Finals of the Dunk King.",
-		"video:duration": "71"
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/24/640a573f-b667-4940-9f30-f4f5a4959ad9.nba_1443146_640x360_600.mp4",
+		"video:title": "NBATV Update",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F24%2Fcfadf1b9-354a-4e86-b879-4b50146deb30.nba_1_1280x720.jpg",
+		"video:description": "All the latest news from around the NBA.",
+		"video:duration": "68"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/24/b1e44ce8-dd21-4b1f-9ebe-5b1e7e252045.nba_1442953_640x360_600.mp4",
+		"video:title": "NBATV Update: 3 Pointers at 3",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F24%2F547fbc00-4d2e-415c-8ce3-a50967588036.nba_1_1280x720.jpg",
+		"video:description": "Check out the latest headlines from around the association.",
+		"video:duration": "72"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/24/6191b5b5-60d9-4d3c-8b0c-daaf2e13caea.nba_1443590_640x360_600.mp4",
+		"video:title": "All-Access: Celtics-Cavaliers Game 4",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/https:%2F%2Fcdn.nba.net%2Fnba-drupal-prod%2F2017-05%2FIrving_arriving_GM4.jpg",
+		"video:description": "Kyrie Irving scored a playoff career-high 42 points as the Cavaliers rallied to defeat the Celtics 112-99 and take a 3-1 series lead.",
+		"video:duration": "61"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/25/c88c4cc2-aabd-4d9a-8f53-24521a7a2606.nba_1445824_640x360_600.mp4",
+		"video:title": "Irving And-One Fast Break",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F25%2F0d8cfba4-070c-4648-97cc-35be6f4bdd4b.nba_1_1280x720.jpg",
+		"video:description": "Cavaliers start the break off the blocked shot and Kyrie Irving finishes with the reverse layup through contact.",
+		"video:duration": "26"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/25/a2b73cef-fd86-4d69-8636-c7328804c2dc.nba_1445814_640x360_600.mp4",
+		"video:title": "LeBron Throws it Down",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F25%2Feb830bfe-f509-4673-9316-8bb459faee01.nba_1_1280x720.jpg",
+		"video:description": "LeBron James backs his way to the hoop and finishes with the one-handed jam.",
+		"video:duration": "31"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/25/ada14f6e-02e7-4db5-b61c-7b3dfa5861b1.nba_1445840_640x360_600.mp4",
+		"video:title": "James Corner Three",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F25%2Fde6b2045-e4e2-40dd-b472-883c1e9fad80.nba_1_1280x720.jpg",
+		"video:description": "LeBron James gets the pass in the corner and knocks down the three with a defender in his face.",
+		"video:duration": "27"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/25/ebf6ae58-0adc-47b2-a72a-8caac54d27ad.nba_1445649_640x360_600.mp4",
+		"video:title": "NBA Meme Team ? Top 5",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/https:%2F%2Fcdn.nba.net%2Fnba-drupal-prod%2F2017-05%2FMemeTeamThumbMay25.jpeg",
+		"video:description": "There are always moments which go viral in the NBA. Here are the top five moments on this week's \"Meme Team\" as counted down by The Starters. Watch The Starters weekdays on NBATV throughout the playoffs and get more of them on their website: http://nba.com/thestarters",
+		"video:duration": "162"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/25/b0ce4d01-959a-48c9-af16-538d9858b093.nba_1445819_640x360_600.mp4",
+		"video:title": "Korver For Three",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F25%2F4bd941d7-dd2c-49a1-95c6-17a2f37ccb38.nba_1_1280x720.jpg",
+		"video:description": "Kyle Korver fakes the shot to lose his man then buries the open three from the wing.",
+		"video:duration": "22"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/25/ea6e3891-9812-4510-a534-5839eccfb84b.nba_1445844_640x360_600.mp4",
+		"video:title": "Crowder And-One",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F25%2Fe5dddf78-e18e-47ef-bebb-26cd91fbde92.nba_1_1280x720.jpg",
+		"video:description": "Jae Crowder slashes to the rim from the wing and gets the layup to go through contact.",
+		"video:duration": "25"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/25/91c3dee8-e2e8-4fcb-a48c-f9dbe2011a7b.nba_1445780_640x360_600.mp4",
+		"video:title": "All-Access: Eastern Conference Finals",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F25%2F96c724d4-b592-4aba-8d82-69f1ac2bb639.nba_1_1280x720.jpg",
+		"video:description": "Go into the action in the Eastern Conference Finals where the number 1 seeded Celtics met up with the defending Champs for a trip to the NBA Finals on the line",
+		"video:duration": "385"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/25/4a8e430e-7240-42fc-890c-896e9deb8d0f.nba_1444944_640x360_600.mp4",
+		"video:title": "NBATV Update",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F25%2F6c8dbf7e-95cb-4d38-bceb-fd2e9024319b.nba_1_1280x720.jpg",
+		"video:description": "Rick Kamla with the latest headlines from around the NBA.",
+		"video:duration": "66"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/25/e4cc1a6c-f9a2-4f3c-8702-b59cead4b7da.nba_1445174_640x360_600.mp4",
+		"video:title": "The Cavaliers Take Game 4!",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F25%2F6d05fea3-0aa1-4ef7-9f1b-0a45f54d6b38.nba_1_1280x720.jpg",
+		"video:description": "Kyrie Irving scored a playoff career-high 42 points as the Cavaliers rallied to defeat the Celtics 112-99 and take a 3-1 series lead.",
+		"video:duration": "61"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/25/60579959-b1d4-49c2-8a0d-d3eccc38f109.nba_1445937_640x360_600.mp4",
+		"video:title": "Play of the Day - LeBron James",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/https:%2F%2Fcdn.nba.net%2Fnba-drupal-prod%2F2017-05%2F_pod_8.jpg",
+		"video:description": "LeBron James hits a three-pointer to pass Michael Jordan as the league's all-time leading scorer in the playoffs.",
+		"video:duration": "34"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/25/aec56ee7-6fed-48bb-b3ee-766e07b3de4c.nba_1446024_640x360_600.mp4",
+		"video:title": "Boston vs. Cleveland - 5/25/2017",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/https:%2F%2Fcdn.nba.net%2Fnba-drupal-prod%2F2017-05%2F_kyrie2.jpg",
+		"video:description": "LeBron James has 35 points, 8 rebounds, and 8 assists to lead the Cavs past the Celtics in Game 5, 135-102 to advance to the NBA Finals.",
+		"video:duration": "99"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/25/49a3368d-5b4c-4508-87bc-caad656c8038.nba_1446037_640x360_600.mp4",
+		"video:title": "Thursday's Top 5 Plays",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/https:%2F%2Fcdn.nba.net%2Fnba-drupal-prod%2F2017-05%2F_top_15.jpg",
+		"video:description": "Take a look at the top five plays from Game 5 of the Eastern Conference Finals.",
+		"video:duration": "85"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/24/c7531157-defa-4210-808e-bd1f563ccc39.nba_1443734_640x360_600.mp4",
+		"video:title": "Warriors Road to the Finals",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/https:%2F%2Fcdn.nba.net%2Fnba-drupal-prod%2F2017-05%2FGettyImages-687263686.jpg",
+		"video:description": "Take an all-access look at the Warriors road to the NBA Finals.",
+		"video:duration": "283"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/25/9ee727bb-3a6c-45c3-9bcc-12223c416673.nba_1445767_640x360_600.mp4",
+		"video:title": "Sounds of the Game",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F25%2F39f71f95-578a-49d7-9348-656b5f6a3137.nba_1_1280x720.jpg",
+		"video:description": "It's a courtside chorus of x's and o's as the oncourt talk gets amplified in this week's Sounds of the Game.",
+		"video:duration": "61"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/25/14be88f6-732c-49c5-8cf0-2f221d60c70c.nba_1446002_640x360_600.mp4",
+		"video:title": "LeBron's Historic Night",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/https:%2F%2Fcdn.nba.net%2Fnba-drupal-prod%2F2017-05%2FGettyImages-688478446_1.jpg",
+		"video:description": "LeBron James scores 35 points and passes Michael Jordan to become all-time playoff scoring leader in the Cavaliers win over the Celtics.",
+		"video:duration": "113"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/25/576f0135-2ef7-4fd3-a619-629e53259e61.nba_1445995_640x360_600.mp4",
+		"video:title": "GAME RECAP: Cavaliers , Celtics",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/https:%2F%2Fcdn.nba.net%2Fnba-drupal-prod%2F2017-05%2F0525_LeBron.jpg",
+		"video:description": "LeBron James scores 35 points and passes Michael Jordan to become all-time playoff scoring leader, as the Cavaliers defeat the Celtics, in Game 5 of the Eastern Conference Finals.",
+		"video:duration": "144"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/25/3d6c7e24-10f6-4979-abd3-121d5980995d.nba_1445735_640x360_600.mp4",
+		"video:title": "GameTime: Marv Albert on LeBron's Health",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F25%2F642175e8-3662-4f47-aef4-16f2b8b878c7.nba_1_1280x720.jpg",
+		"video:description": "Marv Albert joins GameTime to discuss the health of LeBron James heading into Game 5 of the Eastern Conference Finals.",
+		"video:duration": "313"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/25/d755d236-04ac-4aeb-8f08-2b7a105ac2f6.nba_1445862_640x360_600.mp4",
+		"video:title": "Shumpert to the Hoop",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F25%2F4bcd5684-0f4e-4fa1-93e7-751fcb62fb46.nba_1_1280x720.jpg",
+		"video:description": "Iman Shumpert explodes down the lane and evades Celtics defenders with a nice move before scoring.",
+		"video:duration": "24"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/25/8ad54429-3078-4e97-8aa4-5b9ba54cabf8.nba_1445860_640x360_600.mp4",
+		"video:title": "Brown In Transition",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F25%2F397ca616-4c49-4e00-9e8c-a1ffb13bcc19.nba_1_1280x720.jpg",
+		"video:description": "Jaylen Brown pushes it down the court and uses a euro-step down the lane for the score.",
+		"video:duration": "27"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/25/3a2149cd-2b0f-4e6f-9bbb-f2fa5bbbcf99.nba_1445926_640x360_600.mp4",
+		"video:title": "LeBron's Playoff Milestone",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F25%2F6b3eeae6-ed22-464c-945a-1097f9fe71e1.nba_1_1280x720.jpg",
+		"video:description": "LeBron James passes Michael Jordan to become all-time playoff scoring leader.",
+		"video:duration": "47"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/25/962ca27f-af4a-4c9c-a7bb-e7df07a275f2.nba_1445872_640x360_600.mp4",
+		"video:title": "LeBron Drives Baseline",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F25%2Fc40d8b1e-72cb-432e-9c08-ff6389c9f83e.nba_1_1280x720.jpg",
+		"video:description": "LeBron James blows past his man on the baseline for the score.",
+		"video:duration": "31"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/25/54bf3e01-6db8-4366-89f8-f611cb788673.nba_1445893_640x360_600.mp4",
+		"video:title": "Kyrie's Slick Crossover",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F25%2F08932e77-e798-42f2-80d9-025cb3896e4b.nba_1_1280x720.jpg",
+		"video:description": "Kyrie Irving shakes his man on the wing with the crossover and buries the three.",
+		"video:duration": "37"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/25/91ea0c64-246b-4518-a78e-c6397b67fe90.nba_1445691_640x360_600.mp4",
+		"video:title": "GameTime: Live From Boston",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F25%2F2daed386-ee4f-4962-8f41-14b32a03d6d3.nba_1_1280x720.jpg",
+		"video:description": "David Aldridge joins the GameTime crew live from TD Garden to discuss Game 5 of the Eastern Conference Finals.",
+		"video:duration": "241"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/25/6e9dfcfd-5689-42e7-9b18-361c8919fd07.nba_1445677_640x360_600.mp4",
+		"video:title": "GameTime: Celtics Harder to Guard?",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F25%2F5eb2084e-56e6-4804-af7f-b6bd65ffec6e.nba_1_1280x720.jpg",
+		"video:description": "GameTime discusses Tyronn Lue's comments regarding the Celtics being harder to guard than the Warriors.",
+		"video:duration": "153"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/25/a13ada87-863b-44a4-9a24-0a02348d9e11.nba_1445650_640x360_600.mp4",
+		"video:title": "Storytime with Grant Hill",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/https:%2F%2Fcdn.nba.net%2Fnba-drupal-prod%2F2017-05%2FSTORYTIME_1.jpeg",
+		"video:description": "Grant Hill joins The Starters to answer the questions they've always wanted to ask him. Watch The Starters weekdays on NBATV throughout the playoffs and get more of them on their website: http://nba.com/thestarters",
+		"video:duration": "480"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/25/e83f74f8-2307-479b-9762-4746337fc163.nba_1445965_640x360_600.mp4",
+		"video:title": "James Jones Dunk",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F25%2F7faed3b7-a7b3-4bf2-8a60-c149c0b53736.nba_1_1280x720.jpg",
+		"video:description": "James Jones throws down the rare dunk and the bench loves it.",
+		"video:duration": "28"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/25/4e21eb0c-435a-432e-a8fe-8b74ea32347c.nba_1446039_640x360_600.mp4",
+		"video:title": "Top Plays - 5/25/2017",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/https:%2F%2Fcdn.nba.net%2Fnba-drupal-prod%2F2017-05%2F_top_14.jpg",
+		"video:description": "Check out the top plays from Game 5 of the Eastern Conference Finals.",
+		"video:duration": "72"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/25/a829c0ae-09e4-4aad-a6f2-622fd69715c7.nba_1446046_640x360_600.mp4",
+		"video:title": "May 25: The Fast Break",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/https:%2F%2Fcdn.nba.net%2Fnba-drupal-prod%2F2017-05%2F_fb_7.jpg",
+		"video:description": "Get a quick recap from Game 5 of the Eastern Conference Finals in this edition of The Fast Break.",
+		"video:duration": "41"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/25/69938fb3-09c4-4979-8e9e-5879b08eac61.nba_1445721_640x360_600.mp4",
+		"video:title": "GameTime: LeBron Chasing Jordan",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F25%2Fe1d1f417-03f6-4691-8a75-5df2c62b1c54.nba_1_1280x720.jpg",
+		"video:description": "The GameTime crew discusses LeBron James chasing down Michael Jordan's ghost.",
+		"video:duration": "201"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/25/4d2b142e-8a6e-4a65-9561-d698cb8bff69.nba_1445176_640x360_600.mp4",
+		"video:title": "All-Access: Eastern Conference Finals",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F25%2F9f3eef59-ca68-4766-a176-0f649d7c7f27.nba_1_1280x720.jpg",
+		"video:description": "Go into the action in the Eastern Conference Finals where the number 1 seeded Celtics met up with the defending Champs for a trip to the NBA Finals on the line.",
+		"video:duration": "385"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/25/c9f71c0a-9631-4e86-a478-817b36fecba9.nba_1445841_640x360_600.mp4",
+		"video:title": "Rozier And-One",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F25%2F0c6a952d-fed7-49f3-a7ac-5b1aaad11b17.nba_1_1280x720.jpg",
+		"video:description": "Terry Rozier drives and gets the shot to fall, plus a foul.",
+		"video:duration": "26"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/25/a6c88003-f82d-42c6-9263-627023a2c4a2.nba_1445630_640x360_600.mp4",
+		"video:title": "Lonzo Ball's Decision to Not Work Out for Celtics",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F25%2Fc72acb54-7136-4773-883e-2e033bc173bb.nba_1_1280x720.jpg",
+		"video:description": "Is this a savvy move or something Ball will regret?",
+		"video:duration": "171"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/25/202dac1c-40be-4f89-ac10-1732ffd986d8.nba_1446042_640x360_600.mp4",
+		"video:title": "LeBron Ready To Face 'Juggernaut' Warriors",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F25%2F8cc28c34-3f8e-4582-b681-4a698a23ef4c.nba_1_1280x720.jpg",
+		"video:description": "Kristen Ledlow talks to LeBron James about the Cavaliers mindset coming into this closeout game.",
+		"video:duration": "72"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/25/691bf477-a297-4fee-8dcf-09a749ef49b4.nba_1444480_640x360_600.mp4",
+		"video:title": "Game 5 Shootaround: LeBron James",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F25%2Fb317a64f-46e5-4474-9b39-452f95ece3dc.nba_1_1280x720.jpg",
+		"video:description": "Cavaliers forward LeBron James speakes with the media prior to Thursday's shootaround at TD Garden in Boston.",
+		"video:duration": "298"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/25/ed1f5593-dca4-4be1-9392-2b0e9b42e987.nba_1445972_640x360_600.mp4",
+		"video:title": "Move of the Night - LeBron James",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/https:%2F%2Fcdn.nba.net%2Fnba-drupal-prod%2F2017-05%2F_motn2.jpg",
+		"video:description": "LeBron James streaks to the bucket and uses the ball fake on Jae Crowder before making the finger roll.",
+		"video:duration": "31"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/25/54b0b1f3-74dc-4378-ba8c-5e4357b82ffd.nba_1445904_640x360_600.mp4",
+		"video:title": "LeBron Explodes Through the Lane",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F25%2F802b79bd-a211-4a11-99ee-c68aa2f24cbf.nba_1_1280x720.jpg",
+		"video:description": "LeBron James explodes down the lane to throw down the huge one-handed slam.",
+		"video:duration": "23"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/25/3b8b455d-31c1-42d5-a34c-cc0dabf72d71.nba_1445919_640x360_600.mp4",
+		"video:title": "Assist of the Night - Avery Bradley",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/https:%2F%2Fcdn.nba.net%2Fnba-drupal-prod%2F2017-05%2F_aotn_5.jpg",
+		"video:description": "Avery Bradley gets the behind the back assist to Jonas Jerebko for the three-pointer.",
+		"video:duration": "31"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/25/cb82c358-ff1e-4bc2-9b55-8541579fc448.nba_1445876_640x360_600.mp4",
+		"video:title": "Williams And-One",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F25%2Fe215a17d-60de-4188-a139-52ee4202fad7.nba_1_1280x720.jpg",
+		"video:description": "Deron Williams drives to the rim and gets the floater to go through contact as he falls to the ground.",
+		"video:duration": "27"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/25/762aadda-ab26-4e61-b053-364f41dafec1.nba_1445923_640x360_600.mp4",
+		"video:title": "Dunk of the Night - LeBron James",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/https:%2F%2Fcdn.nba.net%2Fnba-drupal-prod%2F2017-05%2F_dotn_9.jpg",
+		"video:description": "Kyrie Irving gets the board then dishes to LeBron James for the tomahawk slam.",
+		"video:duration": "29"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/25/805e3607-5f60-4ade-8941-66d5f3be5992.nba_1446023_640x360_600.mp4",
+		"video:title": "Irving Goes Off",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/https:%2F%2Fcdn.nba.net%2Fnba-drupal-prod%2F2017-05%2FGettyImages-688482070.jpg",
+		"video:description": "Kyrie Irving explodes for 24 points and 7 assists as the Cleveland Cavaliers blow by the  Boston Celtics and advance to the 2017 NBA Finals",
+		"video:duration": "84"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/25/9f4bf46e-e7a3-42d3-b521-3dd68d5a682a.nba_1445782_640x360_600.mp4",
+		"video:title": "Inside the NBA: Shaq and Charles Back At It Again",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F25%2F776f7668-98c0-4a38-8052-779214cc1cc9.nba_1_1280x720.jpg",
+		"video:description": "Things get heated on the set when a tweet asks if Charles and Shaq can get along tonight.",
+		"video:duration": "54"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/25/e024a1e0-5f48-4d58-a98a-1eef3fa77266.nba_1445804_640x360_600.mp4",
+		"video:title": "Love Hits from Three",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F25%2F376bf07d-20b0-45d3-9da3-fcda7cd2ccc2.nba_1_1280x720.jpg",
+		"video:description": "Kevin Love gets the feed in the corner and pump-fakes to draw space for the open three.",
+		"video:duration": "39"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/25/3d6c7e24-10f6-4979-abd3-121d5980995d.nba_1445735_640x360_600.mp4",
+		"video:title": "GameTime: Marv Albert on LeBron's Health",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F25%2F642175e8-3662-4f47-aef4-16f2b8b878c7.nba_1_1280x720.jpg",
+		"video:description": "Marv Albert joins GameTime to discuss the health of LeBron James heading into Game 5 of the Eastern Conference Finals.",
+		"video:duration": "313"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/25/3685e301-e048-4727-b24e-4e521410987d.nba_1445729_640x360_600.mp4",
+		"video:title": "GameTime: Warriors Talk and Hawks-Schlenk",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F25%2Fefdffa70-9df2-4362-aaba-3102cdc1bf4e.nba_1_1280x720.jpg",
+		"video:description": "GameTime crew talks Warriors and the signing of Schlenk to the Hawks.",
+		"video:duration": "361"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/25/cd6cfc30-3666-4133-92e4-0b4b1fe3263c.nba_1445801_640x360_600.mp4",
+		"video:title": "Smith Breakaway Slam",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F25%2F9e690a0f-16b6-4d0a-a8eb-fada489f5b80.nba_1_1280x720.jpg",
+		"video:description": "Kevin Love hauls in the rebound to start the break for the Cavaliers and J.R. Smith finishes with an open slam.",
+		"video:duration": "29"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/25/4ce10669-abaa-4290-801b-ae4777f30aed.nba_1445811_640x360_600.mp4",
+		"video:title": "Irving Slices Through the Lane",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F25%2F637b836c-0c5d-41d9-b792-3cbb1df0cb8d.nba_1_1280x720.jpg",
+		"video:description": "Kyrie Irving shows his handles as he splits the Celtics defense down the lane.",
+		"video:duration": "34"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/25/fc76e603-54ae-4f0e-bc33-cea9228f8593.nba_1445769_640x360_600.mp4",
+		"video:title": "Timeout with Patrick McCaw",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F25%2F34b6382b-b0f7-4368-b97d-5388f80d6847.nba_1_1280x720.jpg",
+		"video:description": "Warriors rookie Patrick McCaw takes us through his basketball journey and talks about his role on the best of West's Golden State Warriors.",
+		"video:duration": "191"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/25/b0088134-fea1-435b-8fdd-3d213bfbcdc0.nba_1444789_640x360_600.mp4",
+		"video:title": "NBATV Update: 3 Pointers at 3",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F25%2F0d2f01e6-93cb-4a70-b01a-29c3457bdd7f.nba_1_1280x720.jpg",
+		"video:description": "Check out the latest headlines from around the association.",
+		"video:duration": "76"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/25/5e4367ef-f5c8-4874-9b9d-b16eb458a182.nba_1445913_640x360_600.mp4",
+		"video:title": "GameTime: Bosh/Heat agree to part ways",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/https:%2F%2Fcdn.nba.net%2Fnba-drupal-prod%2F2017-05%2Fgt_update_0.jpg",
+		"video:description": "The GameTime crew discusses the Miami Heat and Chris Bosh agreeing to part ways.",
+		"video:duration": "54"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/25/a7cc6ee7-47d0-4ed5-a6a9-8ee78ad650ea.nba_1445982_640x360_600.mp4",
+		"video:title": "Nightly Notable: LeBron James",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/https:%2F%2Fcdn.nba.net%2Fnba-drupal-prod%2F2017-05%2F0525_LeBron_2.jpg",
+		"video:description": "Highlight's from LeBron James as he scores 35 points and passes Michael Jordan to become all-time playoff scoring leader, in the Cavaliers Game 5 victory over the Celtics.",
+		"video:duration": "236"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/25/00417d7f-6e63-4c99-8b58-b1d99472de80.nba_1445889_640x360_600.mp4",
+		"video:title": "Cavaliers Offenseive Outburst",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F25%2F4c441c21-02f4-4752-8fe6-cc49f99b546c.nba_1_1280x720.jpg",
+		"video:description": "The Cleveland Cavaliers score 75 points in the first half for a franchise Playoff record.",
+		"video:duration": "220"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/25/25a42ed8-0e6f-4a63-8c30-50465957d661.nba_1445895_640x360_600.mp4",
+		"video:title": "LeBron in Transition",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F25%2Fa44c6b95-24b6-48bf-94b4-4159954117b4.nba_1_1280x720.jpg",
+		"video:description": "LeBron James pushes the ball down the floor in transition and finishes with the finger-roll layup.",
+		"video:duration": "22"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/25/d229aae7-0ffc-4b2a-9f98-537a5749a20a.nba_1445931_640x360_600.mp4",
+		"video:title": "LeBron's Deep Three",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F25%2F053ab2d2-d014-4baf-8e02-1e9bb4381c4b.nba_1_1280x720.jpg",
+		"video:description": "LeBron James with the heat check as he buries the deep triple.",
+		"video:duration": "28"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/26/3c79e45d-370e-4094-8461-aa74d8369e65.nba_1446066_640x360_600.mp4",
+		"video:title": "Isaiah Thomas Shows Love to Cavs",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F26%2Fb79d32f2-a6e0-4fa4-aa4d-f8c6867a9735.nba_1_1280x720.jpg",
+		"video:description": "Isaiah Thomas comes out after the game and shows love to the Cavaliers.",
+		"video:duration": "57"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/25/40680923-c092-4ccc-bd31-55cf2e8d8e75.nba_1446057_640x360_600.mp4",
+		"video:title": "Celtics React to 4-1 Series Loss",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F26%2F3ea00ad2-ef64-441a-812c-92b22b4b6bd1.nba_1_1280x720.jpg",
+		"video:description": "Brad Stevens and Avery Bradley speak with the media postgame following the Celtics loss in Game 5.",
+		"video:duration": "331"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/26/d41ae546-39ba-48c5-865a-6a9ed594b003.nba_1446137_640x360_600.mp4",
+		"video:title": "GameTime: Preview of the 2017 NBA Finals",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F26%2F73071810-b1fe-497d-8b31-7047b64e0b6e.nba_1_1280x720.jpg",
+		"video:description": "The GameTime crew previews the 2017 NBA Finals matchup between the Golden State Warriors and Cleveland Cavaliers.",
+		"video:duration": "312"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/26/f3061bfc-3b10-4f6c-bbd9-0663f815edec.nba_1446101_640x360_600.mp4",
+		"video:title": "Inside the NBA: EJ's Neat-O Stat",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F26%2F59883672-7284-4234-b37e-674ac615744e.nba_1_1280x720.jpg",
+		"video:description": "The inside crew is Gone Fishin' with the Celtics as they are eliminated by the Cavaliers in the Eastern Conference Finals.",
+		"video:duration": "190"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/26/d41ae546-39ba-48c5-865a-6a9ed594b003.nba_1446137_640x360_600.mp4",
+		"video:title": "GameTime: Preview of the 2017 NBA Finals",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F26%2F73071810-b1fe-497d-8b31-7047b64e0b6e.nba_1_1280x720.jpg",
+		"video:description": "The GameTime crew previews the 2017 NBA Finals matchup between the Golden State Warriors and Cleveland Cavaliers.",
+		"video:duration": "312"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/26/d7070939-0c52-4423-84ff-5743a4b703d8.nba_1446087_640x360_600.mp4",
+		"video:title": "GameTime: How Good Is LeBron?",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F26%2F42ee49b3-319d-47e0-bd10-abf291358061.nba_1_1280x720.jpg",
+		"video:description": "The GameTime crew talks about how amazing what LeBron James has accomplished is.",
+		"video:duration": "116"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/26/1fef8a0a-b40c-4e0d-b52b-65d1b3e27112.nba_1446104_640x360_600.mp4",
+		"video:title": "LeBron Talks About Embrace with Isaiah",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F26%2Fe56e054d-5915-4d59-abad-bca06282ffbc.nba_1_1280x720.jpg",
+		"video:description": "LeBron James talks postgame about seeing Isaiah Thomas following Game 5 and their embrace they shared.",
+		"video:duration": "68"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/25/c679285b-a081-46bd-b0df-3d6e75e41567.nba_1446040_640x360_600.mp4",
+		"video:title": "GameTime: Look Ahead",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F25%2F1be02e3d-e601-4413-9381-ed808a9c0b9d.nba_1_1280x720.jpg",
+		"video:description": "The GameTime crew looks ahead to the 2017 NBA Finals match-up between the Golden State Warriors and the Cleveland Cavaliers.",
+		"video:duration": "217"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/26/e2e806ac-b53f-4bc9-a7c2-7aaa41299792.nba_1446115_640x360_600.mp4",
+		"video:title": "LeBron Joined By Teammates Postgame",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F26%2F53aff1f4-a197-4583-90b6-794e9ed0738a.nba_1_1280x720.jpg",
+		"video:description": "As LeBron James answers the media's questions postgame, some of his teammates join him on the podium.",
+		"video:duration": "93"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/25/91ea0c64-246b-4518-a78e-c6397b67fe90.nba_1445691_640x360_600.mp4",
+		"video:title": "GameTime: Live From Boston",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F25%2F2daed386-ee4f-4962-8f41-14b32a03d6d3.nba_1_1280x720.jpg",
+		"video:description": "David Aldridge joins the GameTime crew live from TD Garden to discuss Game 5 of the Eastern Conference Finals.",
+		"video:duration": "241"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/26/41a44523-8aa6-4e99-b216-36ea0250e20b.nba_1446112_640x360_600.mp4",
+		"video:title": "Inside the NBA: Shaq's Foot",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F26%2Ff2e83c7e-6e2c-447a-9260-560df4e22a1c.nba_1_1280x720.jpg",
+		"video:description": "The Inside crew react to Shaq's hideous bare foot.",
+		"video:duration": "111"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/26/c2ec1df8-79df-4e70-986e-25e45f4f95ea.nba_1446073_640x360_600.mp4",
+		"video:title": "Inside the NBA: Where LeBron Ranks All-Time",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F26%2F4dcc3798-f23a-4bc4-8d6c-5e67f7381cb3.nba_1_1280x720.jpg",
+		"video:description": "Charles Barkley ranks LeBron James in his all-time list.",
+		"video:duration": "57"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/25/f4672ddc-e81e-4cdb-b212-928c85b459a1.nba_1446027_640x360_600.mp4",
+		"video:title": "Cavaliers Trophy Presentation",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F25%2Fb05f671c-a125-41cb-bc8e-04f80efbb17a.nba_1_1280x720.jpg",
+		"video:description": "Watch the trophy ceremony and interviews with Kyrie Irving and LeBron James as the Cavaliers beat the Celtics 4-1 in the Eastern Conference Finals.",
+		"video:duration": "363"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/26/9ad586e3-250e-43e5-83d0-67b090ad560b.nba_1446070_640x360_600.mp4",
+		"video:title": "Handle of the Night - Kyrie Irving",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/https:%2F%2Fcdn.nba.net%2Fnba-drupal-prod%2F2017-05%2F_hotn_11.jpg",
+		"video:description": "Kyrie Irving pulls out all the tricks in the bag for the sweet driving finish.",
+		"video:duration": "26"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/26/41a44523-8aa6-4e99-b216-36ea0250e20b.nba_1446112_640x360_600.mp4",
+		"video:title": "Inside the NBA: Shaq's Foot",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F26%2Ff2e83c7e-6e2c-447a-9260-560df4e22a1c.nba_1_1280x720.jpg",
+		"video:description": "The Inside crew react to Shaq's hideous bare foot.",
+		"video:duration": "111"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/26/0b406e07-3fe9-46f6-8039-af11543ad642.nba_1446147_640x360_600.mp4",
+		"video:title": "Cavaliers Talk 4-1 Series Win",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F26%2Fd3b58628-05b5-45ab-b3f9-348a3ec82517.nba_1_1280x720.jpg",
+		"video:description": "Tyronn Lue, Kyrie Irving, Kevin Love, and LeBron James all talk postgame following the Cavaliers 4-1 series win over the Celtics.",
+		"video:duration": "415"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/25/c679285b-a081-46bd-b0df-3d6e75e41567.nba_1446040_640x360_600.mp4",
+		"video:title": "GameTime: Look Ahead",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F25%2F1be02e3d-e601-4413-9381-ed808a9c0b9d.nba_1_1280x720.jpg",
+		"video:description": "The GameTime crew looks ahead to the 2017 NBA Finals match-up between the Golden State Warriors and the Cleveland Cavaliers.",
+		"video:duration": "217"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/26/5e9cb506-7fc9-4e1f-98f2-535d6b4a23ab.nba_1446106_640x360_600.mp4",
+		"video:title": "Block of the Night - Tristan Thompson",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/https:%2F%2Fcdn.nba.net%2Fnba-drupal-prod%2F2017-05%2F_botn_7.jpg",
+		"video:description": "Tristan Thompson blocks Avery Bradley at the rim and sets up Kyrie Irving for the fast break layup.",
+		"video:duration": "37"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/26/d7070939-0c52-4423-84ff-5743a4b703d8.nba_1446087_640x360_600.mp4",
+		"video:title": "GameTime: How Good Is LeBron?",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F26%2F42ee49b3-319d-47e0-bd10-abf291358061.nba_1_1280x720.jpg",
+		"video:description": "The GameTime crew talks about how amazing what LeBron James has accomplished is.",
+		"video:duration": "116"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/25/6e9dfcfd-5689-42e7-9b18-361c8919fd07.nba_1445677_640x360_600.mp4",
+		"video:title": "GameTime: Celtics Harder to Guard?",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F25%2F5eb2084e-56e6-4804-af7f-b6bd65ffec6e.nba_1_1280x720.jpg",
+		"video:description": "GameTime discusses Tyronn Lue's comments regarding the Celtics being harder to guard than the Warriors.",
+		"video:duration": "153"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/26/c2ec1df8-79df-4e70-986e-25e45f4f95ea.nba_1446073_640x360_600.mp4",
+		"video:title": "Inside the NBA: Where LeBron Ranks All-Time",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F26%2F4dcc3798-f23a-4bc4-8d6c-5e67f7381cb3.nba_1_1280x720.jpg",
+		"video:description": "Charles Barkley ranks LeBron James in his all-time list.",
+		"video:duration": "57"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/25/69938fb3-09c4-4979-8e9e-5879b08eac61.nba_1445721_640x360_600.mp4",
+		"video:title": "GameTime: LeBron Chasing Jordan",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F25%2Fe1d1f417-03f6-4691-8a75-5df2c62b1c54.nba_1_1280x720.jpg",
+		"video:description": "The GameTime crew discusses LeBron James chasing down Michael Jordan's ghost.",
+		"video:duration": "201"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/26/11440a46-5672-4e98-a3f7-956425ade93e.nba_1446094_640x360_600.mp4",
+		"video:title": "Inside the NBA: Cavaliers vs. Warriors Finals Rematch",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/",
+		"video:description": "The Inside crew talk about what needs to be done for either team to win the 2017 NBA Finals.",
+		"video:duration": "404"
+	},
+	{
+		"video:content_loc": "http://nba.cdn.turner.com/nba/big/video/2017/05/25/9f4bf46e-e7a3-42d3-b521-3dd68d5a682a.nba_1445782_640x360_600.mp4",
+		"video:title": "Inside the NBA: Shaq and Charles Back At It Again",
+		"video:thumbnail_loc": "https://images.nba.net/nba/c_fill,g_faces:center,w_136,h_96/http:%2F%2Fnba.cdn.turner.com%2Fnba%2Fbig%2Fvideo%2F2017%2F05%2F25%2F776f7668-98c0-4a38-8052-779214cc1cc9.nba_1_1280x720.jpg",
+		"video:description": "Things get heated on the set when a tweet asks if Charles and Shaq can get along tonight.",
+		"video:duration": "54"
 	}
 ];
 
