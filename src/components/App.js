@@ -30,9 +30,9 @@ export default class App extends Component {
 
 	render() {
 		return (
-			<div>				
-				<Header />
+			<div>								
 				<VideoPlayer video={this.state.currentVideo} />
+				<div className='test'>Stream: <i>The latest highlights from the NBA</i></div>
 			</div>
 		)
 	}

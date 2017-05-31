@@ -6,6 +6,7 @@ import ReactScrollableList from 'react-scrollable-list'
 import Background from '../images/background.jpg'
 import Img from 'react-image'
 import Videos from '../../temp.json'
+
 function VideoList(props) {
 	let listItems = [] 
 	Videos.map((video, index) => {
@@ -21,7 +22,7 @@ function VideoList(props) {
 		})
 	})
 	return (
-		<ReactScrollableList className='list-inline'
+		<ReactScrollableList className='list-inline list'
 			listItems={listItems}
 			heightOfItem={30}
 			maxItemsToRender={1000}	/>
@@ -37,8 +38,8 @@ export default class VideoPlayer extends Component {
 
 	renderVideo() {
 	  return (
-	  	<div className='player'>	  		
-		    <Player ref="player">
+	  	<div className='content player'>	  
+	  		<Player ref="player">
 		      <source src={this.state.source} />
 		    </Player>  		
 	  	</div>
@@ -46,7 +47,8 @@ export default class VideoPlayer extends Component {
 	}
   componentDidMount() {
     // subscribe state change    
-    this.refs.player.subscribeToStateChange(this.handleStateChange.bind(this));    	
+    this.refs.player.subscribeToStateChange(this.handleStateChange.bind(this)); 
+    document.getElementsByClassName('video-react-controls-enabled')[0].style['padding-top'] = '46.25%'   	
   }
   handleStateChange(state, prevState) {
     // copy player state to this component's state
@@ -67,16 +69,12 @@ export default class VideoPlayer extends Component {
 
 	render() {	
 	  return (
-	  	<div className="container">	  		
-	  		<div className='player'>
-			    <Player autoPlay ref="player" poster={Background}>
-			      <source src={this.state.source} />
-			    </Player> 
-	  		</div>
-	  		<div className="list">
-		    	<VideoList updatePlayerInfo={this.updatePlayerInfo}/>		
-	  		</div>	  		
-	  	</div>
+	  	<section className="banner style1 orient-right content-align-right image-position-right fullscreen onload-image-fade-in onload-content-fade-right">	
+	  		<VideoList updatePlayerInfo={this.updatePlayerInfo}/>	  				
+		    <Player id='testVideo' autoPlay ref="player" poster={Background}>		    	
+		      <source src={this.state.source} />
+		    </Player> 
+	  	</section>
 	  )	  
 	}
 }
