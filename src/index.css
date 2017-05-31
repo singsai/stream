@@ -7,11 +7,15 @@
   License: pixelarity.com/license
 */
 
-.test {
+.headerDetail {
   color: white;
   padding-top: 10px;
   padding-left: 10px;
   margin-bottom: 0;
+}
+
+.headerDetail strong {
+  color: white;
 }
 
 .list {

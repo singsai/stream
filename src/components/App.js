@@ -32,7 +32,6 @@ export default class App extends Component {
 		return (
 			<div>								
 				<VideoPlayer video={this.state.currentVideo} />
-				<div className='test'>Stream: <i>The latest highlights from the NBA</i></div>
 			</div>
 		)
 	}
